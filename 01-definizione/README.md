@@ -1,7 +1,8 @@
 # Definizione
-membri del gruppo:
+Membri del gruppo:
 
-<@jacopofavat @marcocarazita>
+
+[@jacopofavat](https://github.com/JacopoFavat). [@marcocarazita](https://github.com/marcocarazita)
 
 ## Introduzione
 
