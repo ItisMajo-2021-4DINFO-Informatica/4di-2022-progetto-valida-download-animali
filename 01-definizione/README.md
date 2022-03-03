@@ -16,9 +16,10 @@ L'applicazione permetterà la navigazione all'interno del filesystem in modo tal
 - Per quanto riguarda la firma digitale PGP abbiamo capito che essa utilizza la cifratura a chiave pubblica per proteggere i file di dati e i messaggi, permettendo di comunicare in modo sicuro con chiunque, senza bisogno di canali sicuri per lo scambio delle chiavi.
 - Lo SHA-256 è una diversa funzione di hash, solitamente i produttori di software rilasciano l'elenco ufficiale dei propri hash su i loro siti, così nel caso scaricassimo il file ed eseguissimo la funzione di hash, potremmo verificarene l'autenticità ed evitare un file manomesso o danneggiato
 
+#
+(___)
 
-
-Il gruppo ha delle carenze comuni e dovrà approfondire i seguenti punti:
+Il Gruppo ha delle carenze comuni e dovrà approfondire i seguenti punti:
 - Approfondire la creazione della parte grafica di WPF poichè  il gruppo si trova  ad un livello base riguardo la parte grafica di WPF.
 - Apprendere il metodo del checksum SHA256 e della firma digitale PGP.
 - Capire come integrare all'interno dell'applicazione desktop la navigazione nel filesystem.
