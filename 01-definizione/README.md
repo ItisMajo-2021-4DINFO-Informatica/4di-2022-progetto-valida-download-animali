@@ -2,7 +2,7 @@
 Membri del gruppo:
 
 
-[@jacopofavat](https://github.com/JacopoFavat). [@marcocarazita](https://github.com/marcocarazita)
+[@jacopofavat](https://github.com/JacopoFavat)-[@marcocarazita](https://github.com/marcocarazita)
 
 ## Introduzione
 
