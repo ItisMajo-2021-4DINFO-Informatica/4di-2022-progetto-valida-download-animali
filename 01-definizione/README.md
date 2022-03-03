@@ -1,7 +1,7 @@
 # Definizione
 membri del gruppo:
 
-@jacopofavat @marcocarazita
+<@jacopofavat @marcocarazita>
 
 ## Introduzione
 
