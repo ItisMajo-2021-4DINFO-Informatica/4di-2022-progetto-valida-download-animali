@@ -32,5 +32,5 @@ Il Gruppo presenta delle carenze comuni e dovrà approfondire i seguenti punti:
 
 ## Indicazione e organizzazione delle informazioni che si useranno per rispondere ai bisogni e colmare i gap di conoscenza
 
-Il Gruppo per colmare i gap di conoscenza, andrà ad utilizzare i documenti informativi forniti da Microsoft (**Microsoft.DOC**) riguardanti lo sviluppo desktop WPF e usufruirà anche delle informazioni fornite da Microsoft.DOC per apprendere al meglio la firma digitale PGP e il metodo del checksum SHA256. Successivamente per la parte grafiche sono stati individuati dei corsi di spiegazione su YouTube molto forniti e articolati, come ad esempio quelli citati precedentemente.
-Per problematiche generali consulteremo siti web open source in modo tale da risolvere velocemente e correttamente il problema come ad esempio "**GitHub**" e "**StackOverflow**".
+Il Gruppo per colmare i gap di conoscenza, andrà ad utilizzare i documenti informativi forniti da Microsoft (**Microsoft.DOC**) riguardanti lo sviluppo desktop WPF e usufruirà anche delle informazioni fornite da Microsoft.DOC per apprendere al meglio la firma digitale PGP e il metodo del checksum SHA256. Successivamente per la parti grafiche sono stati individuati dei corsi di spiegazione step-by-step su YouTube molto forniti e articolati, come ad esempio quelli citati precedentemente.
+Per problematiche generali consulteremo siti web open source come "**[GitHub](https://github.com/)**" e "**[StackOverflow](https://stackoverflow.com/)**", in modo tale da risolvere velocemente e correttamente il problema.
