@@ -18,6 +18,5 @@ Come citato in precedenza nel [Documento di Definizione](https://github.com/Itis
 
 ## Documentazione dei collegamenti e relazioni tra ciò che si sta realizzando e le informazioni di riferimento (teoria della materia, altre materie, soluzioni già esistenti)
 Collegamenti con:
-- Inglese: Per reperire informazioni più precise nelle dispense online e per facilitare la ricerca all'interno del **filesystem** in inglese
-- Elemento 2
--
+- **_Inglese_**: Per reperire informazioni più precise nelle dispense online e per facilitare la ricerca all'interno del **filesystem** in inglese.
+- **_Informatica(teoria)_**: Usufruiremo delle spiegazioni del Professore"[Marcello Bozzi](https://github.com/bozzimarcello)", in merito alla chiave PGP e al calcolo del checksum SHA256
