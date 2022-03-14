@@ -21,7 +21,7 @@ Di seguito sono riportati i collegamenti con gli argomenti delle materie che sti
 
 - **_Inglese_**: Per reperire informazioni più precise nelle dispense online e per facilitare la ricerca all'interno del **Filesystem** in inglese.
 - **_Informatica (Teoria)_**: Usufruiremo delle spiegazioni del Professore [Marcello Bozzi](https://github.com/bozzimarcello), in merito alla chiave PGP, alal chiave asimmetrica e al calcolo del checksum **SHA256**.
-- **_Sistemi e Reti_**: Vi è un collegamento generale legato allo scambio di un pacchetto che di verrà diviso in più pacchetti.
+- **_Sistemi e Reti_**: Vi è un collegamento generale legato allo scambio di un pacchetto che verrà diviso in più pacchetti.
 
 Per la parte rigurdante il calcolo del checksum **SHA256** di un file uploadato dal **Filesystem** ci andremo ad ispirare al [sito web](https://emn178.github.io/online-tools/sha256_checksum.html) in questione, il quale la nostra base di riferimento.
 
