@@ -14,8 +14,10 @@ Il lavoro sarà organizzato nel seguente modo:
 - Infine tutto il gruppo andrà ad eseguire un controllo dettagliato del prodotto finale per far si che non siano presenti _errori_ e/o _malfunzionamenti_ interni
 
 ## Documentazione del processo di realizzazione, attraverso appunti e commenti significativi alle versioni rilasciate su GitHub (commit)
-Come citato in precedenza nel [Documento di Definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/blob/main/01-definizione/README.md), utilizzeremo il sito web open source **"[GitHub](https://github.com/)"** e la sua realitiva applicazione **GitHub Desktop**, la quale verrà utilizzata per uploadare tutte le versione aggiornate dei file tramite i commit, che saranno forniti di nome del file alla quale verrà associato il numero della versione di aggiornamento.
+Come citato in precedenza nel [Documento di Definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/blob/main/01-definizione/README.md), utilizzeremo il sito web open source **"[GitHub](https://github.com/)"** e la sua realitiva applicazione **GitHub Desktop**, la quale verrà utilizzata per uploadare tutte le versione aggiornate dei file tramite i commit, che saranno forniti di nome del file alla quale verrà associato il numero della versione di aggiornamento. All'interno del singolo commit sarà disponibile la descrizione delle modifiche apportate ad ogni singola consegna.
 
 ## Documentazione dei collegamenti e relazioni tra ciò che si sta realizzando e le informazioni di riferimento (teoria della materia, altre materie, soluzioni già esistenti)
-
-
+Collegamenti con:
+- Inglese: Per reperire informazioni più precise nelle dispense online e per facilitare la ricerca all'interno del **filesystem** in inglese
+- Elemento 2
+-
