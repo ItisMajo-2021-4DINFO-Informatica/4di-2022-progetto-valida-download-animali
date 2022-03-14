@@ -20,8 +20,8 @@ Come citato in precedenza nel [Documento di Definizione](https://github.com/Itis
 Di seguito sono riportati i collegamenti con gli argomenti delle materie che stiamo studiando:
 
 - **_Inglese_**: Per reperire informazioni più precise nelle dispense online e per facilitare la ricerca all'interno del **filesystem** in inglese.
-- **_Informatica (teoria)_**: Usufruiremo delle spiegazioni del Professore [Marcello Bozzi](https://github.com/bozzimarcello), in merito alla chiave PGP e al calcolo del checksum **SHA256**.
+- **_Informatica (teoria)_**: Usufruiremo delle spiegazioni del Professore [Marcello Bozzi](https://github.com/bozzimarcello), in merito alla chiave PGP, alal chiave asimmetrica e al calcolo del checksum **SHA256**.
 
 Per la parte rigurdante il calcolo del checksum **SHA256** di un file uploadato dal **filesystem** ci andremo ad ispirare al [sito web](https://emn178.github.io/online-tools/sha256_checksum.html) in questione, che sarà la nostra base di riferimento.
 
-Per la sezione riguardante la **chiave PGP**, come per il calcolo del checksum, ci andremo ad ispirare al seguente [programma](https://www.igolder.com/pgp/generate-key/) web open source in modo tale da avere un solido riferiemento a cui ispirarci.
+Per la sezione riguardante la **Chiave PGP**, come per il calcolo del checksum, ci andremo ad ispirare al seguente [programma](https://www.igolder.com/pgp/generate-key/) web open source in modo tale da avere un solido riferiemento a cui ispirarci.
