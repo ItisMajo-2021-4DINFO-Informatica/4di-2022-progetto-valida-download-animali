@@ -1,9 +1,8 @@
-# Progetto Majorana
-Progetto base per gli allievi dell'ITIS Majorana di Grugliasco(TO); completo di progetto, documentazione e realizzazione.
+# Presentazione Gruppo 
 
-Le cartelle del progetto vanno usate per depositare i documenti, gli appunti e il codice sorgente elaborati.
-Si forniscono documenti di base per una guida alla stesura.
 
-I commenti alle versioni depositate, i file descrittivi README.md e ogni altra funzionalità di GitHub che consente di documentare il progetto (Issues, Pages, ecc.) saranno presi in considerazione per la valutazione.
+[@jacopofavat](https://github.com/JacopoFavat): Leader del [Gruppo](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali), se una **Scadenza** lo attende, la Notte non sarà un'ostacolo, la sua dedizione al lavoro supera qualsiasi altra cosa.
 
-I contenuti testuali vanno formattati utilizzando il linguaggio Markdown (https://daringfireball.net/projects/markdown/).
+[@marcocarazita](https://github.com/marcocarazita): Co-Leader del [Gruppo](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali), prende decisioni **Avventate**, ma la sua esperienza fa si che si rivelino giuste.
+
+![logo](/04-immagini/LogoAnimali.png)
