@@ -1,5 +1,6 @@
-# Codice
+# Istruzioni Per L'Apertura del Codice
 
-Inserisci in questa cartella la soluzione completa contenente i file sorgente.
+[@jacopofavat](https://github.com/JacopoFavat) - [@marcocarazita](https://github.com/marcocarazita)
+#
 
-Puoi usare questo file per documentarlo.
+Il Codice Sorgente del Nostro progetto sarà visualizzabile all'interno della [Cartella](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/tree/main/03-codice/AnimaliValidaDownloadApp) posizionata nella sezione superiore.
