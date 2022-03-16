@@ -1,4 +1,4 @@
-# Istruzioni Per L'Apertura del Codice
+# Istruzioni per l'Apertura del Codice
 
 [@jacopofavat](https://github.com/JacopoFavat) - [@marcocarazita](https://github.com/marcocarazita)
 #
