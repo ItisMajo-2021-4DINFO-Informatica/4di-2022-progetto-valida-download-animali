@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Security.Cryptography;
+using System.IO;
+using Microsoft.Win32;
 
 namespace AnimaliValidaDownloadApp
 {
@@ -26,7 +28,16 @@ namespace AnimaliValidaDownloadApp
             InitializeComponent();
         }
 
+        // Configure open file dialog box
+        private void btnOpenFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                LblStampa.Content= File.ReadAllText(openFileDialog.FileName);
+            openFileDialog.Filter = "All files (*.*)";
+        }
 
     }
-
 }
+
+
