@@ -13,9 +13,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="/1.jpg"/>
         </Grid.Background>
-        <Label x:Name="LblStampa" Content="Stampa" Background="White" HorizontalAlignment="Left" Margin="598,311,0,0" VerticalAlignment="Top" Width="117" Height="77"/>
-        <Button x:Name="OpenFile"  Content="Prendi file dal filesystem" HorizontalAlignment="Left" Margin="88,140,0,0" VerticalAlignment="Top" Height="36" Width="132"/>
-
+        <Label x:Name="Lbl" Content="Stampa" Background="White" HorizontalAlignment="Left" Margin="598,311,0,0" VerticalAlignment="Top" Width="117" Height="77"/>
+        <Button x:Name="OpenFile"  Content="Prendi file dal filesystem" HorizontalAlignment="Left" Margin="43,138,0,0" VerticalAlignment="Top" Height="36" Width="132" Click="OpenFile_Click"/>
+        <TextBox x:Name="txtFile"  HorizontalAlignment="Left" Margin="43,217,0,0" VerticalAlignment="Top" Height="184" Width="132"/>
 
     </Grid>
 </Window>

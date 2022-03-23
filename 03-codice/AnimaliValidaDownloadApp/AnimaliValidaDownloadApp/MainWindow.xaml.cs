@@ -28,15 +28,14 @@ namespace AnimaliValidaDownloadApp
             InitializeComponent();
         }
 
-        // Configure open file dialog box
-        private void btnOpenFile_Click(object sender, RoutedEventArgs e)
+    
+        private void OpenFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
-                LblStampa.Content= File.ReadAllText(openFileDialog.FileName);
-            openFileDialog.Filter = "All files (*.*)";
+                txtFile.Text = File.ReadAllText(openFileDialog.FileName);
+       
         }
-
     }
 }
 
