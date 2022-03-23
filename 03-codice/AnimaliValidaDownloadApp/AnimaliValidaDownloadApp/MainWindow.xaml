@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:AnimaliValidaDownloadApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/1.jpg"/>
+    </Window.Background>
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/1.jpg"/>
+        </Grid.Background>
+        <Label Content="Stampa" HorizontalAlignment="Left" Margin="336,150,0,0" VerticalAlignment="Top"/>
+        <Button Content="Prendi file dal filesystem" HorizontalAlignment="Left" Margin="88,140,0,0" VerticalAlignment="Top" Height="36" Width="132"/>
+      
 
     </Grid>
 </Window>
