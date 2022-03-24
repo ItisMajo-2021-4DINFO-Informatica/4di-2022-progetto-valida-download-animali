@@ -34,7 +34,13 @@ namespace AnimaliValidaDownloadApp
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
                 txtFile.Text = File.ReadAllText(openFileDialog.FileName);
-       
+             if (MessageBox.Show("Vuoi Importare Questo File?",
+                    "Save file",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+{
+    // Do something here
+}
         }
     }
 }
