@@ -28,7 +28,7 @@ namespace AnimaliValidaDownloadApp
                    MessageBoxImage.Question) == MessageBoxResult.Yes)
                 txtFile.Text = File.ReadAllText(openFileDialog.FileName);
             {
-                // l'utente fa qualocsa
+                // l'utente fa qualcosa
             }
         }                                                                            //FINE CODICE FILESYSTEM
 
