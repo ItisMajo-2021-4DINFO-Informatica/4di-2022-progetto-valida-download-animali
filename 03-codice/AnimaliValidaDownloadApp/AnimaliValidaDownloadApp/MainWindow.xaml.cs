@@ -11,6 +11,7 @@ namespace AnimaliValidaDownloadApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        ClasseDelloSha256 SHA256 = new();
         public MainWindow()
         {
             InitializeComponent();
@@ -20,13 +21,12 @@ namespace AnimaliValidaDownloadApp
         private void OpenFile_Click(object sender, RoutedEventArgs e)               //CODICE FILESYSTEM
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == true) ;
-
+            if (openFileDialog.ShowDialog() == true) { //] } ;
             if (MessageBox.Show("Vuoi Importare Questo File?",
                    "Save file",
                    MessageBoxButton.YesNo,
                    MessageBoxImage.Question) == MessageBoxResult.Yes)
-                txtFile.Text = File.ReadAllText(openFileDialog.FileName);
+                txtFile.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
             {
                 // l'utente fa qualcosa
             }
@@ -37,6 +37,7 @@ namespace AnimaliValidaDownloadApp
 
     }
 }
+    }
 
 
 
