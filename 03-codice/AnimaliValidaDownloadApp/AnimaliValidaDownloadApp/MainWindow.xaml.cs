@@ -21,23 +21,24 @@ namespace AnimaliValidaDownloadApp
         private void OpenFile_Click(object sender, RoutedEventArgs e)               //CODICE FILESYSTEM
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == true) { //] } ;
-            if (MessageBox.Show("Vuoi Importare Questo File?",
-                   "Save file",
-                   MessageBoxButton.YesNo,
-                   MessageBoxImage.Question) == MessageBoxResult.Yes)
-                txtFile.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
-            {
-                // l'utente fa qualcosa
-            }
-        }                                                                            //FINE CODICE FILESYSTEM
+            if (openFileDialog.ShowDialog() == true)
+            { //] } ;
+                if (MessageBox.Show("Vuoi Importare Questo File?",
+                       "Save file",
+                       MessageBoxButton.YesNo,
+                       MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    txtFile.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
+                {
+                    // l'utente fa qualcosa
+                }
+            }                                                                            //FINE CODICE FILESYSTEM
 
 
 
 
+        }
     }
 }
-    }
 
 
 
