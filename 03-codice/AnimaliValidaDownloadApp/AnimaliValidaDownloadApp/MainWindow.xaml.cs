@@ -27,7 +27,7 @@ namespace AnimaliValidaDownloadApp
                        "Save file",
                        MessageBoxButton.YesNo,
                        MessageBoxImage.Question) == MessageBoxResult.Yes)
-                    txtFile.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
+                    textBox2.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
                 {
                     // l'utente fa qualcosa
                 }
