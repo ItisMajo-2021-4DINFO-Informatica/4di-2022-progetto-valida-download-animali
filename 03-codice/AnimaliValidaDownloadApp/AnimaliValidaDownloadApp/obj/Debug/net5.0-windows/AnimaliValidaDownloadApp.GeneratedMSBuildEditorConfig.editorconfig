@@ -6,5 +6,3 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = AnimaliValidaDownloadApp
-build_property.ProjectDir = C:\Users\Utente\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\

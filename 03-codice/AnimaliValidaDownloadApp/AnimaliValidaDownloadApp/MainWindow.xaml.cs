@@ -37,6 +37,19 @@ namespace AnimaliValidaDownloadApp
 
 
         }
+
+        private void ConfrontaDueTextboxe_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox2.Text.Trim() == textBox1.Text.Trim())
+            {
+                MessageBox.Show("Lo SHA256 è uguale");  
+            }
+            else
+            {
+                MessageBox.Show("Lo SHA256 non è uguale");
+                return;
+            }
+        }
     }
 }
 
