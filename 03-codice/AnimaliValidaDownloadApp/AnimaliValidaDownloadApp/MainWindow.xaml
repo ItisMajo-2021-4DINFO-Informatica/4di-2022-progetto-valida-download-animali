@@ -71,12 +71,12 @@
             <ImageBrush ImageSource="/6.png"/>
         </Grid.Background>
 
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFile"  Content="Importa" HorizontalAlignment="Left" Margin="237,53,0,0" VerticalAlignment="Top" Height="36" Width="132" Click="OpenFile_Click"/>
-        <TextBox  x:Name="textBox1"  HorizontalAlignment="Left" Margin="229,248,0,0" VerticalAlignment="Top" Height="60" Width="147"/>
-        <TextBox  x:Name="textBox2"  HorizontalAlignment="Left" Margin="229,103,0,0" VerticalAlignment="Top" Height="60" Width="147"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextboxe"  Content="Confronta" HorizontalAlignment="Left" Margin="237,192,0,0" VerticalAlignment="Top" Height="36" Width="132" Click="ConfrontaDueTextboxe_Click"/>
-        <Label Content="Sha del file importato" Background="White" HorizontalAlignment="Left" Margin="397,107,0,0" VerticalAlignment="Top"/>
-        <Label Content="Sha del file originale" Background="White" HorizontalAlignment="Left" Margin="400,248,0,0" VerticalAlignment="Top"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFile"  Content="Importa" HorizontalAlignment="Left" Margin="209,74,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="OpenFile_Click"/>
+        <TextBox  x:Name="textBox1"  HorizontalAlignment="Left" Margin="69,275,0,0" VerticalAlignment="Top" Height="26" Width="412"/>
+        <TextBox  x:Name="textBox2"  HorizontalAlignment="Left" Margin="69,130,0,0" VerticalAlignment="Top" Height="30" Width="412"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextboxe"  Content="Confronta" HorizontalAlignment="Left" Margin="209,217,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="ConfrontaDueTextboxe_Click"/>
+        <Label Content="Sha del file importato" Background="White" HorizontalAlignment="Left" Margin="502,130,0,0" VerticalAlignment="Top" Height="30"/>
+        <Label Content="Sha del file originale" Background="White" HorizontalAlignment="Left" Margin="505,275,0,0" VerticalAlignment="Top" Width="121"/>
 
     </Grid>
 </Window>
