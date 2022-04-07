@@ -71,7 +71,11 @@
             <ImageBrush ImageSource="/6.png"/>
         </Grid.Background>
 
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFile"  Content="Importa" HorizontalAlignment="Left" Margin="209,74,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="OpenFile_Click"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFile"  Content="" HorizontalAlignment="Left" Margin="236,46,0,0" VerticalAlignment="Top" Height="79" Width="84" Click="OpenFile_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/BOTTONE.png"/>
+            </Button.Background>
+        </Button>
         <TextBlock  x:Name="TextBlock2"  HorizontalAlignment="Left" Margin="69,275,0,0" VerticalAlignment="Top" Height="30" Width="412" Opacity="0.995">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -91,7 +95,11 @@
         <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="Confronta" HorizontalAlignment="Left" Margin="209,338,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="ConfrontaDueTextBlock_Click"/>
         <Label Content="Sha del file importato" Background="White" HorizontalAlignment="Left" Margin="502,130,0,0" VerticalAlignment="Top" Height="30"/>
         <Label Content="Sha del file originale" Background="White" HorizontalAlignment="Left" Margin="502,275,0,0" VerticalAlignment="Top" Width="121" Height="26"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFileVerifica"  Content="Importa" HorizontalAlignment="Left" Margin="209,217,0,0" VerticalAlignment="Top" Height="36" Width="164" Click="OpenFileVerifica_Click"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="236,192,0,0" VerticalAlignment="Top" Height="78" Width="84" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/BOTTONE.png"/>
+            </Button.Background>
+        </Button>
         <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="Elimina tutto" HorizontalAlignment="Left" Margin="419,338,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="EliminaContenutoTextBlock_Click"/>
     </Grid>
 </Window>

@@ -12,6 +12,7 @@
     <None Remove="4.png" />
     <None Remove="5.png" />
     <None Remove="6.png" />
+    <None Remove="BOTTONE.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,7 @@
     <Resource Include="4.png" />
     <Resource Include="5.png" />
     <Resource Include="6.png" />
+    <Resource Include="BOTTONE.png" />
   </ItemGroup>
 
 </Project>
