@@ -69,9 +69,11 @@ namespace AnimaliValidaDownloadApp
             }
         }                                                                               //FINE CONFORNTA
 
-
-
-
+        private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)
+        {
+            TextBlock1.Text = "";
+            TextBlock2.Text = "";
+        }
 
 
     }
