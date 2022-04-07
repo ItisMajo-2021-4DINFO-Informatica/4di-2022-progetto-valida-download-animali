@@ -27,7 +27,7 @@ namespace AnimaliValidaDownloadApp
                        "Save file",
                        MessageBoxButton.YesNo,
                        MessageBoxImage.Question) == MessageBoxResult.Yes)
-                    textBox2.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
+                    TextBlock1.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
                 {
                     // l'utente fa qualcosa
                 }
@@ -46,7 +46,7 @@ namespace AnimaliValidaDownloadApp
                        "Save file",
                        MessageBoxButton.YesNo,
                        MessageBoxImage.Question) == MessageBoxResult.Yes)
-                    textBox1.Text = SHA256.LetturaInterna(openFileDialog.FileName);
+                    TextBlock2.Text = SHA256.LetturaInterna(openFileDialog.FileName);
                 {
                     // l'utente fa qualcosa
                 }
@@ -54,20 +54,26 @@ namespace AnimaliValidaDownloadApp
         }                                                                                       //FINE FILESYSTEM VERIFICA
 
 
-        private void ConfrontaDueTextboxe_Click(object sender, RoutedEventArgs e)       //CONFRONTA I DUE SHA256
+                                                                                
+
+        private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)          //INIZIO CONFRONTA
         {
-            if (textBox2.Text.Trim() == textBox1.Text.Trim())
+            if (TextBlock1.Text.Trim() == TextBlock2.Text.Trim())
             {
-                MessageBox.Show("Lo SHA256 è uguale");  
+                MessageBox.Show("Lo SHA256 è uguale");
             }
             else
             {
                 MessageBox.Show("Lo SHA256 non è uguale");
                 return;
             }
-        }                                                                                 //FINE CONFORNTA
+        }                                                                               //FINE CONFORNTA
 
-      
+
+
+
+
+
     }
 }
 
