@@ -4,6 +4,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Windows;
 
+
 namespace AnimaliValidaDownloadApp
 {
     /// <summary>
