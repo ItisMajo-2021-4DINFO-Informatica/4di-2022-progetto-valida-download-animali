@@ -71,7 +71,7 @@
             <ImageBrush ImageSource="/6.png"/>
         </Grid.Background>
 
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFile"  Content="" HorizontalAlignment="Left" Margin="495,126,0,0" VerticalAlignment="Top" Height="38" Width="39" Click="OpenFile_Click" BorderBrush="{x:Null}">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFile"  Content="" HorizontalAlignment="Left" Margin="491,110,0,0" VerticalAlignment="Top" Height="62" Width="63" Click="OpenFile_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/BOTTONE.png"/>
             </Button.Background>
@@ -95,13 +95,13 @@
         <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="Confronta" HorizontalAlignment="Left" Margin="209,338,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="ConfrontaDueTextBlock_Click"/>
         <Label Content="Sha del file importato" Background="White" HorizontalAlignment="Left" Margin="209,95,0,0" VerticalAlignment="Top" Height="30"/>
         <Label Content="Sha del file originale" Background="White" HorizontalAlignment="Left" Margin="209,244,0,0" VerticalAlignment="Top" Width="121" Height="26"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="496,269,0,0" VerticalAlignment="Top" Height="37" Width="38" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="491,257,0,0" VerticalAlignment="Top" Height="62" Width="63" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}" RenderTransformOrigin="0.73,0.533">
             <Button.Background>
                 <ImageBrush ImageSource="/BOTTONE.png"/>
             </Button.Background>
         </Button>
         <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="Elimina tutto" HorizontalAlignment="Left" Margin="419,338,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="EliminaContenutoTextBlock_Click"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="561,115,156,0"  VerticalAlignment="Top" Height="64" Click="EliminaSha1_Click" BorderBrush="{x:Null}" RenderTransformOrigin="-0.051,0.446">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="569,112,154,0"  VerticalAlignment="Top" Height="64" Click="EliminaSha1_Click" BorderBrush="{x:Null}" RenderTransformOrigin="-0.051,0.446">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -115,7 +115,7 @@
             </Button.Background>
 
         </Button>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"   Margin="539,275,228,0"  VerticalAlignment="Top" Height="31" BorderBrush="{x:Null}" Click="EliminaSha2_Click">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"   Margin="568,257,153,0"  VerticalAlignment="Top" Height="64" BorderBrush="{x:Null}" Click="EliminaSha2_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png"/>
             </Button.Background>
