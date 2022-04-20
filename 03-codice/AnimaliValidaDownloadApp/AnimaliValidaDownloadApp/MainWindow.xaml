@@ -63,7 +63,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid Margin="0,0,-44,0">
         <Grid.Background>
             <ImageBrush ImageSource="/6.png"/>
         </Grid.Background>
@@ -98,21 +98,14 @@
             </Button.Background>
         </Button>
         <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="Elimina tutto" HorizontalAlignment="Left" Margin="483,356,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="EliminaContenutoTextBlock_Click"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="29,171,750,0"  VerticalAlignment="Top" Height="45" Click="EliminaSha1_Click" BorderBrush="{x:Null}" RenderTransformOrigin="-0.051,0.446">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="-1.941"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-0.574"/>
-                </TransformGroup>
-            </Button.RenderTransform>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="27,187,778,0"  VerticalAlignment="Top" Height="45"  Click="EliminaSha1_Click" BorderBrush="{x:Null}">
+
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png"/>
             </Button.Background>
 
         </Button>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"   Margin="27,336,751,0"  VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="27,336,778,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png"/>
             </Button.Background>

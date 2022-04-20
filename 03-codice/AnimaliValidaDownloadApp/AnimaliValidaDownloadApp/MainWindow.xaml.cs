@@ -16,6 +16,8 @@ namespace AnimaliValidaDownloadApp
         public MainWindow()
         {
             InitializeComponent();
+            TextBlock1.Visibility = Visibility.Collapsed;
+            TextBlock2.Visibility = Visibility.Collapsed;
         }
 
 
