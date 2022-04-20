@@ -75,7 +75,15 @@ namespace AnimaliValidaDownloadApp
             TextBlock2.Text = "";
         }
 
+        private void EliminaSha1_Click(object sender, RoutedEventArgs e)
+        {
+            TextBlock1.Text = "";
+        }
 
+        private void EliminaSha2_Click(object sender, RoutedEventArgs e)
+        {
+            TextBlock2.Text = "";
+        }
     }
 }
 
