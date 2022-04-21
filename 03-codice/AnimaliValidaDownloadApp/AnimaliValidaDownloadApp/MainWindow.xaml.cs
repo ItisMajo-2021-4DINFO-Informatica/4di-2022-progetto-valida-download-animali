@@ -87,6 +87,23 @@ namespace AnimaliValidaDownloadApp
         {
             TextBlock2.Text = "";
         }
+
+        private void CloseProgram_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void FullScreenProgram_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Maximized;
+            WindowStyle = WindowStyle.None;
+
+        }
+
+        private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
     }
 }
 

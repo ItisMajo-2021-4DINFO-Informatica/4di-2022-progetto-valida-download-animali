@@ -14,6 +14,9 @@
     <None Remove="6.png" />
     <None Remove="BOTTONE.png" />
     <None Remove="ELIMINA.png" />
+    <None Remove="Giallo.png" />
+    <None Remove="rossoX.png" />
+    <None Remove="Verde-.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +27,9 @@
     <Resource Include="6.png" />
     <Resource Include="BOTTONE.png" />
     <Resource Include="ELIMINA.png" />
+    <Resource Include="Giallo.png" />
+    <Resource Include="rossoX.png" />
+    <Resource Include="Verde-.png" />
   </ItemGroup>
 
 </Project>

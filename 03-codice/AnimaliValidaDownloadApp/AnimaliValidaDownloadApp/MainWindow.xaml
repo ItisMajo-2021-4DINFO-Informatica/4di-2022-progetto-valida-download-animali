@@ -64,6 +64,10 @@
         </Style>
     </Window.Resources>
     <Grid Margin="0,0,-44,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="269*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/6.png"/>
         </Grid.Background>
@@ -73,9 +77,9 @@
                 <ImageBrush ImageSource="/BOTTONE.png"/>
             </Button.Background>
         </Button>
-        <TextBlock  x:Name="TextBlock2"  HorizontalAlignment="Left" Margin="447,88,0,0" VerticalAlignment="Top" Height="30" Width="412" Opacity="0.995" Background="#FFD8DDDE"/>
-        <TextBlock  x:Name="TextBlock1"  HorizontalAlignment="Left" Margin="447,34,0,0" VerticalAlignment="Top" Height="30" Width="412" Background="#FFD8DDDE"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="Confronta" HorizontalAlignment="Left" Margin="351,264,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="ConfrontaDueTextBlock_Click"/>
+        <TextBlock  x:Name="TextBlock2"  HorizontalAlignment="Left" Margin="116,88,0,0" VerticalAlignment="Top" Height="30" Width="412" Opacity="0.995" Background="#FFD8DDDE" Grid.Column="1"/>
+        <TextBlock  x:Name="TextBlock1"  HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top" Height="30" Width="412" Background="#FFD8DDDE" Grid.Column="1"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="Confronta" HorizontalAlignment="Left" Margin="20,264,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="ConfrontaDueTextBlock_Click" Grid.Column="1"/>
         <Label Content="Importa Sha di un file" Background="White" HorizontalAlignment="Left" Margin="75,120,0,0" VerticalAlignment="Top" Height="30" Width="135"/>
         <Label Content="Importa Sha originale" Background="White" HorizontalAlignment="Left" Margin="78,279,0,0" VerticalAlignment="Top" Width="132" Height="26"/>
         <Button  x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="27,270,0,0" VerticalAlignment="Top" Height="47" Width="48" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}">
@@ -83,20 +87,33 @@
                 <ImageBrush ImageSource="/BOTTONE.png"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="Elimina tutto" HorizontalAlignment="Left" Margin="561,264,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="EliminaContenutoTextBlock_Click"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="27,187,778,0"  VerticalAlignment="Top" Height="45"  Click="EliminaSha1_Click" BorderBrush="{x:Null}">
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="Elimina tutto" HorizontalAlignment="Left" Margin="230,264,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="EliminaContenutoTextBlock_Click" Grid.Column="1"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="27,187,240,0"  VerticalAlignment="Top" Height="45"  Click="EliminaSha1_Click" BorderBrush="{x:Null}">
 
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png"/>
             </Button.Background>
 
         </Button>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="27,336,778,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="27,336,240,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="ChiudiProgramma"  Margin="27,336,778,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102"></Button>
-       
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="FullScreenProgram"  Margin="59,-6,224,0" VerticalAlignment="Top" Height="38" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="FullScreenProgram_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Verde-.png"/>
+            </Button.Background>
+        </Button>
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="MettiTendinaProgramma"  Margin="26,-6,257,0" VerticalAlignment="Top" Height="38" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="MettiTendinaProgramma_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Giallo.png"/>
+            </Button.Background>
+        </Button>
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="CloseProgram"  Margin="-6,-7,290,0" VerticalAlignment="Top" Height="40" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="CloseProgram_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/rossoX.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
