@@ -61,15 +61,27 @@ namespace AnimaliValidaDownloadApp
 
         private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)          //INIZIO CONFRONTA
         {
+            if (String.IsNullOrWhiteSpace(TextBlock1.Text))
+            {
+                MessageBox.Show("File Scaricato non Importato");
+                return;
+            }
+            if (String.IsNullOrWhiteSpace(TextBlock2.Text))
+            {
+                MessageBox.Show("File di Verifica non Importato");
+                return;
+            }
             if (TextBlock1.Text.Trim() == TextBlock2.Text.Trim())
             {
                 MessageBox.Show("Lo SHA256 è uguale");
+                return;
             }
             else
             {
                 MessageBox.Show("Lo SHA256 non è uguale");
                 return;
             }
+           
         }                                                                               //FINE CONFORNTA
 
         private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)
@@ -95,9 +107,8 @@ namespace AnimaliValidaDownloadApp
 
         private void FullScreenProgram_Click(object sender, RoutedEventArgs e)
         {
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
 
+          
         }
 
         private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)
