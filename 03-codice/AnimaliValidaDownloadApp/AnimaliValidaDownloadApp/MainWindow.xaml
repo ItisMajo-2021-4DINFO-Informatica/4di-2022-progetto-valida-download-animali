@@ -120,7 +120,11 @@
                 <ImageBrush ImageSource="/rossoX.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Width="512" Height="75" Grid.Column="1"/>
+        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Width="512" Height="75" Grid.Column="1" FontFamily="Arial Black" FontSize="24" Foreground="White">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
         <Button Content="Avanti" x:Name="BottoneAvanti" Grid.Column="1" HorizontalAlignment="Left" Margin="322,0,0,0" VerticalAlignment="Center" Click="BottoneAvanti_Click"/>
         <Button Content="Indietro" x:Name="BottoneIndietro" Grid.Column="1" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Center"/>
 

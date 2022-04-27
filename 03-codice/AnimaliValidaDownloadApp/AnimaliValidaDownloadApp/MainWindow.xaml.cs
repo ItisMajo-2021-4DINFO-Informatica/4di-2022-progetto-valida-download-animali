@@ -136,20 +136,6 @@ namespace AnimaliValidaDownloadApp
                 LabelCambio.Content = "Confronta i Due File";
             }
          
-            
-            
-            
-            
-            
-            /*  if (TextBlock2.Text != "")
-            {
-                LabelCambio.Content = "Confronta i Due File";
-            }
-            else
-            {
-                MessageBox.Show("File di Verifica non Importato");
-                return;
-            } */
 
         }
     }
