@@ -79,13 +79,25 @@
         </Button>
         <TextBlock  x:Name="TextBlock2"  HorizontalAlignment="Left" Margin="116,88,0,0" VerticalAlignment="Top" Height="30" Width="412" Opacity="0.995" Background="#FFD8DDDE" Grid.Column="1"/>
         <TextBlock  x:Name="TextBlock1"  HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top" Height="30" Width="412" Background="#FFD8DDDE" Grid.Column="1"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="Confronta" HorizontalAlignment="Left" Margin="20,264,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="ConfrontaDueTextBlock_Click" Grid.Column="1"/>
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="" HorizontalAlignment="Left" Margin="34,312,0,0" VerticalAlignment="Top" Height="112" Width="161" Click="ConfrontaDueTextBlock_Click" Grid.Column="1">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush ImageSource="/CONFRONTA.png" Stretch="Uniform"/>
+            </Button.Background>
+
+        </Button>
         <Button  x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="21,304,0,0" VerticalAlignment="Top" Height="47" Width="48" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/BOTTONE.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="Elimina tutto" HorizontalAlignment="Left" Margin="230,264,0,0" VerticalAlignment="Top" Height="49" Width="164" Click="EliminaContenutoTextBlock_Click" Grid.Column="1"/>
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="" HorizontalAlignment="Left" Margin="250,312,0,0" VerticalAlignment="Top" Height="112" Width="143" Click="EliminaContenutoTextBlock_Click" Grid.Column="1" BorderBrush="{x:Null}" RenderTransformOrigin="-0.609,0.554">
+            <Button.Background>
+                <ImageBrush ImageSource="/DELETEALL.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
         <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="14,169,257,0"  VerticalAlignment="Top" Height="45"  Click="EliminaSha1_Click" BorderBrush="{x:Null}">
 
             <Button.Background>
@@ -98,11 +110,6 @@
                 <ImageBrush ImageSource="/ELIMINA.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="FullScreenProgram"  Margin="56,-6,220,0" VerticalAlignment="Top" Height="42" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="FullScreenProgram_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/Verde-.png" Stretch="Uniform"/>
-            </Button.Background>
-        </Button>
         <Button  Style="{DynamicResource BottoneRotondo}" x:Name="MettiTendinaProgramma"  Margin="26,-6,251,0" VerticalAlignment="Top" Height="42" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="MettiTendinaProgramma_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Giallo.png" Stretch="Uniform"/>
@@ -113,5 +120,9 @@
                 <ImageBrush ImageSource="/rossoX.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
+        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Width="512" Height="75" Grid.Column="1"/>
+        <Button Content="Avanti" x:Name="BottoneAvanti" Grid.Column="1" HorizontalAlignment="Left" Margin="322,0,0,0" VerticalAlignment="Center" Click="BottoneAvanti_Click"/>
+        <Button Content="Indietro" x:Name="BottoneIndietro" Grid.Column="1" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Center"/>
+
     </Grid>
 </Window>

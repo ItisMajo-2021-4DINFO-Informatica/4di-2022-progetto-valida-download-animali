@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Windows;
 
 
+
 namespace AnimaliValidaDownloadApp
 {
     /// <summary>
@@ -82,12 +83,14 @@ namespace AnimaliValidaDownloadApp
                 return;
             }
            
+
         }                                                                               //FINE CONFORNTA
 
         private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)
         {
             TextBlock1.Text = "";
             TextBlock2.Text = "";
+            LabelCambio.Content = "Inserisci il File Scaricato nella sezione Apposita sulla colonna di Sinistra";
         }
 
         private void EliminaSha1_Click(object sender, RoutedEventArgs e)
@@ -114,6 +117,40 @@ namespace AnimaliValidaDownloadApp
         private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+        }
+
+        private void BottoneAvanti_Click(object sender, RoutedEventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(TextBlock1.Text ))
+            {
+                MessageBox.Show("File Scaricato non Importato");
+                return;
+            }
+            if (String.IsNullOrWhiteSpace(TextBlock2.Text))
+            {
+                MessageBox.Show("File Di Verifica non Importato");
+                return;
+            }
+            else
+            {
+                LabelCambio.Content = "Confronta i Due File";
+            }
+         
+            
+            
+            
+            
+            
+            /*  if (TextBlock2.Text != "")
+            {
+                LabelCambio.Content = "Confronta i Due File";
+            }
+            else
+            {
+                MessageBox.Show("File di Verifica non Importato");
+                return;
+            } */
+
         }
     }
 }

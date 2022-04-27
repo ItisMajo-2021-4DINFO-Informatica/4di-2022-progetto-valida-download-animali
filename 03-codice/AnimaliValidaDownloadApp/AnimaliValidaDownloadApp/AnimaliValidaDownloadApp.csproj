@@ -14,6 +14,8 @@
     <None Remove="6.png" />
     <None Remove="7.png" />
     <None Remove="BOTTONE.png" />
+    <None Remove="CONFRONTA.png" />
+    <None Remove="DELETEALL.png" />
     <None Remove="ELIMINA.png" />
     <None Remove="Giallo.png" />
     <None Remove="rossoX.png" />
@@ -28,6 +30,8 @@
     <Resource Include="6.png" />
     <Resource Include="7.png" />
     <Resource Include="BOTTONE.png" />
+    <Resource Include="CONFRONTA.png" />
+    <Resource Include="DELETEALL.png" />
     <Resource Include="ELIMINA.png" />
     <Resource Include="Giallo.png" />
     <Resource Include="rossoX.png" />
