@@ -93,7 +93,7 @@
                 <ImageBrush ImageSource="/BOTTONE.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="" HorizontalAlignment="Left" Margin="250,312,0,0" VerticalAlignment="Top" Height="112" Width="143" Click="EliminaContenutoTextBlock_Click" Grid.Column="1" BorderBrush="{x:Null}" RenderTransformOrigin="-0.609,0.554">
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="" HorizontalAlignment="Left" Margin="274,312,0,0" VerticalAlignment="Top" Height="112" Width="143" Click="EliminaContenutoTextBlock_Click" Grid.Column="1" BorderBrush="{x:Null}" RenderTransformOrigin="-0.609,0.554">
             <Button.Background>
                 <ImageBrush ImageSource="/DELETEALL.png" Stretch="Uniform"/>
             </Button.Background>
@@ -120,13 +120,26 @@
                 <ImageBrush ImageSource="/rossoX.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="0,79,0,0" VerticalAlignment="Top" Width="512" Height="75" Grid.Column="1" FontFamily="Arial Black" FontSize="24" Foreground="White">
+        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="322,74,0,0" VerticalAlignment="Top" Width="512" Height="75" FontFamily="Arial Black" FontSize="30" Grid.ColumnSpan="2">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF0026FF" Offset="0.16"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
             <Label.Background>
                 <ImageBrush/>
             </Label.Background>
         </Label>
-        <Button Content="Avanti" x:Name="BottoneAvanti" Grid.Column="1" HorizontalAlignment="Left" Margin="322,0,0,0" VerticalAlignment="Center" Click="BottoneAvanti_Click"/>
-        <Button Content="Indietro" x:Name="BottoneIndietro" Grid.Column="1" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Center"/>
+        <Button Content="" x:Name="BottoneAvanti" Grid.Column="1" HorizontalAlignment="Left" Margin="151,163,0,0" VerticalAlignment="Top" Click="BottoneAvanti_Click" Height="137" Width="161" BorderBrush="{x:Null}">
+            <Button.Foreground>
+                <ImageBrush ImageSource="/AVANTI.png"/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="/AVANTI.png"/>
+            </Button.Background>
+        </Button>
+
 
     </Grid>
 </Window>

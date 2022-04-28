@@ -90,7 +90,7 @@ namespace AnimaliValidaDownloadApp
         {
             TextBlock1.Text = "";
             TextBlock2.Text = "";
-            LabelCambio.Content = "Inserisci il File Scaricato nella sezione Apposita sulla colonna di Sinistra";
+            LabelCambio.Content = "Importa i Due File Richiesti";
         }
 
         private void EliminaSha1_Click(object sender, RoutedEventArgs e)
