@@ -1,19 +1,22 @@
-## Welcome to GitHub Pages By Animali
+## Benvenuti sul sito web del gruppo Animali
 
-You can use the [editor on GitHub](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+In questo sito potranno essere approfondite le funzionalità del nostro programma
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Introduzione
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Hai appena scaricato un file da internet e hai paura che sia stato manomesso da qualche hacker? Non c'è problema, oggi ti illustreremo le funzionalità della nostra applicazione che ti permetterà di verificarne l'autenticità e rimanere al sicuro.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Cosa è necessario avere
+
+Per sfruttare la nostra applicazione ti servirà il file scricato con estensione .iso e un file (di solito fornito dal produttore del file che hai scaricato) con estensione .sha256, il quale permetterà di vericare se sopra di esso siano state eseguite delle manomissioni
+
+
+
+
+
+
 
 - Bulleted
 - List
