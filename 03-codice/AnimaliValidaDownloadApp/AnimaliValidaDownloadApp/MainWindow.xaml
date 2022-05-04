@@ -63,7 +63,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid Margin="0,0,-44,0">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="166*"/>
             <ColumnDefinition Width="269*"/>
@@ -79,7 +79,7 @@
         </Button>
         <TextBlock  x:Name="TextBlock2"  HorizontalAlignment="Left" Margin="116,88,0,0" VerticalAlignment="Top" Height="30" Width="412" Opacity="0.995" Background="#FFD8DDDE" Grid.Column="1"/>
         <TextBlock  x:Name="TextBlock1"  HorizontalAlignment="Left" Margin="116,34,0,0" VerticalAlignment="Top" Height="30" Width="412" Background="#FFD8DDDE" Grid.Column="1"/>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="" HorizontalAlignment="Left" Margin="34,312,0,0" VerticalAlignment="Top" Height="112" Width="161" Click="ConfrontaDueTextBlock_Click" Grid.Column="1">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="ConfrontaDueTextBlock"  Content="" HorizontalAlignment="Left" Margin="280,312,0,0" VerticalAlignment="Top" Height="112" Width="160" Click="ConfrontaDueTextBlock_Click" Grid.ColumnSpan="2">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -93,51 +93,42 @@
                 <ImageBrush ImageSource="/BOTTONE.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="" HorizontalAlignment="Left" Margin="274,312,0,0" VerticalAlignment="Top" Height="112" Width="143" Click="EliminaContenutoTextBlock_Click" Grid.Column="1" BorderBrush="{x:Null}" RenderTransformOrigin="-0.609,0.554">
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="EliminaContenutoTextBlock"  Content="" HorizontalAlignment="Left" Margin="322,312,0,0" VerticalAlignment="Top" Height="112" Width="143" Click="EliminaContenutoTextBlock_Click" Grid.Column="1" BorderBrush="{x:Null}" RenderTransformOrigin="-0.609,0.554">
             <Button.Background>
                 <ImageBrush ImageSource="/DELETEALL.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="14,169,257,0"  VerticalAlignment="Top" Height="45"  Click="EliminaSha1_Click" BorderBrush="{x:Null}">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha1"   Margin="18,169,249,0"  VerticalAlignment="Top" Height="45"  Click="EliminaSha1_Click" BorderBrush="{x:Null}">
 
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png" Stretch="Uniform"/>
             </Button.Background>
 
         </Button>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="15,373,257,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="21,371,246,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="MettiTendinaProgramma"  Margin="26,-6,251,0" VerticalAlignment="Top" Height="42" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="MettiTendinaProgramma_Click">
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="MettiTendinaProgramma"  Margin="28,0,249,0" VerticalAlignment="Top" Height="38" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="MettiTendinaProgramma_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/Giallo.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="/Giallo.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="CloseProgram"  Margin="-2,-6,284,0" VerticalAlignment="Top" Height="43" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="CloseProgram_Click">
+        <Button  Style="{DynamicResource BottoneRotondo}" x:Name="CloseProgram"  Margin="0,0,276,0" VerticalAlignment="Top" Height="38" BorderBrush="{x:Null}"  RenderTransformOrigin="0.503,-0.102" Click="CloseProgram_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/rossoX.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="/rossoX.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="322,74,0,0" VerticalAlignment="Top" Width="512" Height="75" FontFamily="Arial Black" FontSize="30" Grid.ColumnSpan="2">
-            <Label.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FF0026FF" Offset="0.16"/>
-                </LinearGradientBrush>
-            </Label.Foreground>
-            <Label.Background>
-                <ImageBrush/>
-            </Label.Background>
-        </Label>
-        <Button Content="" x:Name="BottoneAvanti" Grid.Column="1" HorizontalAlignment="Left" Margin="151,163,0,0" VerticalAlignment="Top" Click="BottoneAvanti_Click" Height="137" Width="161" BorderBrush="{x:Null}">
+        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="315,70,0,0" VerticalAlignment="Top" Width="512" Height="75" FontFamily="Arial Black" FontSize="30" FontStyle="Normal" Background="{x:Null}" Foreground="Red" Grid.ColumnSpan="2"/>
+        <Button Content="" x:Name="BottoneAvanti" HorizontalAlignment="Left" Margin="150,0,0,0" VerticalAlignment="Center" Click="BottoneAvanti_Click" Height="142" Width="150" BorderBrush="{x:Null}" Grid.Column="1">
             <Button.Foreground>
                 <ImageBrush ImageSource="/AVANTI.png"/>
             </Button.Foreground>
             <Button.Background>
-                <ImageBrush ImageSource="/AVANTI.png"/>
+                <ImageBrush ImageSource="/AVANTI.png" Stretch="Uniform"/>
             </Button.Background>
+
         </Button>
 
 

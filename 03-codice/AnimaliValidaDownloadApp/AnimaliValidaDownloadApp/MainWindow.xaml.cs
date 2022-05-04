@@ -13,7 +13,7 @@ namespace AnimaliValidaDownloadApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        ClasseDelloSha256 SHA256 = new();
+        ClasseDelloSha256 SHA256 = new();                                                   
         public MainWindow()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace AnimaliValidaDownloadApp
         }
 
 
-        private void OpenFile_Click(object sender, RoutedEventArgs e)               //CODICE FILESYSTEM
+        private void OpenFile_Click(object sender, RoutedEventArgs e)                      //CODICE FILESYSTEM
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
@@ -35,13 +35,13 @@ namespace AnimaliValidaDownloadApp
                 {
                     // l'utente fa qualcosa
                 }
-            }                                                                            //FINE CODICE FILESYSTEM
+            }                                                                              //FINE CODICE FILESYSTEM
 
 
 
 
         }
-        private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)                //CODICE FILESYSTEM VERIFICA
+        private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)              //CODICE FILESYSTEM VERIFICA
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
@@ -55,12 +55,12 @@ namespace AnimaliValidaDownloadApp
                     // l'utente fa qualcosa
                 }
             }
-        }                                                                                       //FINE FILESYSTEM VERIFICA
+        }                                                                                  //FINE FILESYSTEM VERIFICA
 
 
                                                                                 
 
-        private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)          //INIZIO CONFRONTA
+        private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)         //INIZIO CONFRONTA
         {
             if (String.IsNullOrWhiteSpace(TextBlock1.Text))
             {
@@ -84,42 +84,37 @@ namespace AnimaliValidaDownloadApp
             }
            
 
-        }                                                                               //FINE CONFORNTA
+        }                                                                                 //FINE CONFORNTA
 
-        private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)
+        private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)    //INIZIO ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
         {
             TextBlock1.Text = "";
             TextBlock2.Text = "";
             LabelCambio.Content = "Importa i Due File Richiesti";
-        }
+        }                                                                                 //FINE ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
 
-        private void EliminaSha1_Click(object sender, RoutedEventArgs e)
+        private void EliminaSha1_Click(object sender, RoutedEventArgs e)                  //INIZIO ELIMINAZIONE CONTENUTO PRIMO SHA
         {
             TextBlock1.Text = "";
-        }
+        }                                                                                 //FINE ELIMINAZIONE CONTENUTO PRIMO SHA
 
-        private void EliminaSha2_Click(object sender, RoutedEventArgs e)
+        private void EliminaSha2_Click(object sender, RoutedEventArgs e)                   //INIZIO ELIMINAZIONE CONTENUTO SECONDO SHA
         {
             TextBlock2.Text = "";
-        }
+        }                                                                                  //FINE ELIMINAZIONE CONTENUTO SECONDO SHA
 
-        private void CloseProgram_Click(object sender, RoutedEventArgs e)
+        private void CloseProgram_Click(object sender, RoutedEventArgs e)                  //INIZIO BOTTONE CHE CHIUDE IL PROGRAMMA
         {
             Close();
-        }
+        }                                                                                  //FINE BOTTONE CHE CHIUDE IL PROGRAMMA
 
-        private void FullScreenProgram_Click(object sender, RoutedEventArgs e)
-        {
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
-        }
 
-        private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)
+        private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)         //INIZIO BOTTONE CHE CHIUDE IL PROGRAMMA
         {
             this.WindowState = WindowState.Minimized;
-        }
+        }                                                                                  //FINE BOTTONE CHE CHIUDE IL PROGRAMMA
 
-        private void BottoneAvanti_Click(object sender, RoutedEventArgs e)
+        private void BottoneAvanti_Click(object sender, RoutedEventArgs e)                //INIZIO BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
         {
             if (String.IsNullOrWhiteSpace(TextBlock1.Text ))
             {
@@ -135,10 +130,11 @@ namespace AnimaliValidaDownloadApp
             {
                 LabelCambio.Content = "Confronta i Due File";
             }
-         
 
-        }
-    }
+
+
+        }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
+    } 
 }
 
 
