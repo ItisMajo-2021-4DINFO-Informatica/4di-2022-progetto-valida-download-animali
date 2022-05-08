@@ -27,6 +27,7 @@ namespace AnimaliValidaDownloadApp
         private void OpenFile_Click(object sender, RoutedEventArgs e)                      //CODICE FILESYSTEM
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "(*.iso)|*.iso| All files(*.*)|*.*";
             if (openFileDialog.ShowDialog() == true)
             { 
                 if (MessageBox.Show("Vuoi Importare Questo File?",
@@ -43,6 +44,7 @@ namespace AnimaliValidaDownloadApp
         private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)              //CODICE FILESYSTEM VERIFICA
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "(*.sha256)|*.sha256| All files(*.*)| *.*";
             if (openFileDialog.ShowDialog() == true)
             { 
                 if (MessageBox.Show("Vuoi Importare Questo File?",

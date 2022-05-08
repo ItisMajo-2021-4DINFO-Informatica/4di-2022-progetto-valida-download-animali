@@ -41,5 +41,7 @@ namespace AnimaliValidaDownloadApp
             }
             return ShaFile;
         }
+
+      
     }
 }
