@@ -26,39 +26,34 @@ namespace AnimaliValidaDownloadApp
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
-            { //] } ;
+            { 
                 if (MessageBox.Show("Vuoi Importare Questo File?",
                        "Save file",
                        MessageBoxButton.YesNo,
                        MessageBoxImage.Question) == MessageBoxResult.Yes)
-                    TextBlock1.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
+                       TextBlock1.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
                 {
                     // l'utente fa qualcosa
                 }
             }                                                                              //FINE CODICE FILESYSTEM
-
-
-
-
         }
+
         private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)              //CODICE FILESYSTEM VERIFICA
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
-            { //] } ;
+            { 
                 if (MessageBox.Show("Vuoi Importare Questo File?",
                        "Save file",
                        MessageBoxButton.YesNo,
                        MessageBoxImage.Question) == MessageBoxResult.Yes)
-                    TextBlock2.Text = SHA256.LetturaInterna(openFileDialog.FileName);
+                       TextBlock2.Text = SHA256.LetturaInterna(openFileDialog.FileName);
                 {
-                    // l'utente fa qualcosa
+                    // l'utente compie un azione
                 }
             }
         }                                                                                  //FINE FILESYSTEM VERIFICA
-
-
-                                                                                
+                                                                  
 
         private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)         //INIZIO CONFRONTA
         {
@@ -82,8 +77,6 @@ namespace AnimaliValidaDownloadApp
                 MessageBox.Show("Lo SHA256 non è uguale");
                 return;
             }
-           
-
         }                                                                                 //FINE CONFORNTA
 
         private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)    //INIZIO ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
@@ -108,7 +101,6 @@ namespace AnimaliValidaDownloadApp
             Close();
         }                                                                                  //FINE BOTTONE CHE CHIUDE IL PROGRAMMA
 
-
         private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)         //INIZIO BOTTONE CHE CHIUDE IL PROGRAMMA
         {
             this.WindowState = WindowState.Minimized;
@@ -130,8 +122,6 @@ namespace AnimaliValidaDownloadApp
             {
                 LabelCambio.Content = "Confronta i Due File";
             }
-
-
 
         }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
     } 

@@ -15,7 +15,7 @@ namespace AnimaliValidaDownloadApp
             using (SHA256 SHA256 = SHA256Managed.Create())
             {
                 using (FileStream fileStream = File.OpenRead(filePath))
-                    return (BitConverter.ToString(SHA256.ComputeHash(fileStream)).Replace("-", "")).ToLower();
+                return (BitConverter.ToString(SHA256.ComputeHash(fileStream)).Replace("-", "")).ToLower();
 
             }
         }
@@ -29,6 +29,7 @@ namespace AnimaliValidaDownloadApp
 
             using (FileStream flusso = new FileStream(percorso, FileMode.Open, FileAccess.Read))
             {
+
                 StreamReader reader = new StreamReader(flusso);
                 while(!reader.EndOfStream)
                 {
@@ -36,11 +37,9 @@ namespace AnimaliValidaDownloadApp
                 }
                 elementi = linea.Split(' ');
                 ShaFile = elementi[0];
+
             }
             return ShaFile;
-            
-
         }
-
     }
 }

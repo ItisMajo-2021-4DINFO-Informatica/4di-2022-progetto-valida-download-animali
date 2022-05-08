@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "AnimaliValidaDownloadApp/1.0.0": {
+        "dependencies": {
+          "Starksoft.Cryptography.OpenPGP": "1.0.132.0"
+        },
         "runtime": {
           "AnimaliValidaDownloadApp.dll": {}
+        }
+      },
+      "Starksoft.Cryptography.OpenPGP/1.0.132.0": {
+        "runtime": {
+          "Starksoft.Cryptography.OpenPGP.dll": {
+            "assemblyVersion": "1.0.132.0",
+            "fileVersion": "1.0.132.0"
+          }
         }
       }
     }
@@ -16,6 +27,11 @@
   "libraries": {
     "AnimaliValidaDownloadApp/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Starksoft.Cryptography.OpenPGP/1.0.132.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

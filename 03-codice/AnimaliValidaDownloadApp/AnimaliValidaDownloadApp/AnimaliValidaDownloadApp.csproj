@@ -25,6 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Starksoft.Cryptography.OpenPGP">
+      <HintPath>..\..\ThirdPartyAssemblies\Starksoft.Cryptography.OpenPGP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="1.jpg" />
     <Resource Include="2.jpg" />
     <Resource Include="4.png" />
