@@ -12,6 +12,8 @@ namespace AnimaliValidaDownloadApp
         public interface IEncryptionService
         {
             FileInfo EncryptFile(string keyUserId, string sourceFile, string encryptedFile);
+            FileInfo DecryptFile(string encryptedSourceFile, string decryptedFile);
+          
         }
     }
 }

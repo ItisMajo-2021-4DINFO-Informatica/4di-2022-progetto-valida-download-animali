@@ -13,7 +13,9 @@ namespace AnimaliValidaDownloadApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        ClasseDelloSha256 SHA256 = new();                                                   
+        ClasseDelloSha256 SHA256 = new();    
+        Contracts contracts = new();
+        EncryptionService encryptionService = new();
         public MainWindow()
         {
             InitializeComponent();
