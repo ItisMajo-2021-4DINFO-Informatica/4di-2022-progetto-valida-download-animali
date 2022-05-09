@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Windows;
+using DidiSoft.Pgp;
 
 
 
@@ -14,8 +15,6 @@ namespace AnimaliValidaDownloadApp
     public partial class MainWindow : Window
     {
         ClasseDelloSha256 SHA256 = new();    
-        Contracts contracts = new();
-        EncryptionService encryptionService = new();
         public MainWindow()
         {
             InitializeComponent();
@@ -128,7 +127,41 @@ namespace AnimaliValidaDownloadApp
             }
 
         }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
-    } 
+
+
+ 
+        public class VerifyDemo
+    {
+        public void Demo()
+        {
+            // create an instance of the library
+            PGPLib pgp = new PGPLib();
+
+            // check the signature and extract the data 
+            SignatureCheckResult signatureCheck =
+                pgp.VerifyFile(@"C:\Test\INPUT.pgp",
+                               @"C:\Test\public_key.asc",
+                               @"C:\Test\OUTPUT.txt");
+
+            if (signatureCheck == SignatureCheckResult.SignatureVerified)
+            {
+                Console.WriteLine("Signare OK");
+            }
+            else if (signatureCheck == SignatureCheckResult.SignatureBroken)
+            {
+                Console.WriteLine("Signare of the message is either broken or forged");
+            }
+            else if (signatureCheck == SignatureCheckResult.PublicKeyNotMatching)
+            {
+                Console.WriteLine("The provided public key doesn't match the signature");
+            }
+            else if (signatureCheck == SignatureCheckResult.NoSignatureFound)
+            {
+                Console.WriteLine("This message is not digitally signed");
+            }
+        }
+    }
+} 
 }
 
 
