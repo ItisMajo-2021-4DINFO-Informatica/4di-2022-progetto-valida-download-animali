@@ -135,7 +135,7 @@
                 <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
             </Label.Background>
         </Label>
-        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,107,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
+        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,109,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
             <Label.Background>
                 <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
             </Label.Background>
