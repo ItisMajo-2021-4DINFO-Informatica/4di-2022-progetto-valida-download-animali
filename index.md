@@ -19,6 +19,9 @@ Per sfruttare la nostra applicazione ti servirà il file scricato con estensione
 
 
 
+### Collegamenti ai lavori precedenti
+Guarda i lavori che ci hanno portato alla realizzazione del nostro software.
+### [Documento di definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/tree/main/01-definizione).
 
 ### Contattaci
 
