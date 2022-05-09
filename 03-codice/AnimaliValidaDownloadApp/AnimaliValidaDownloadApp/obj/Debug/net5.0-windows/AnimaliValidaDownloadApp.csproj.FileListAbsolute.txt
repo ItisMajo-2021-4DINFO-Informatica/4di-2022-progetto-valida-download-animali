@@ -42,6 +42,3 @@ C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\Animal
 C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\ref\AnimaliValidaDownloadApp.dll
 C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.pdb
 C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.genruntimeconfig.cache
-C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\bin\Debug\net5.0-windows\Starksoft.Cryptography.OpenPGP.dll
-C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\bin\Debug\net5.0-windows\Starksoft.Cryptography.OpenPGP.xml
-C:\Users\User\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.csproj.CopyComplete

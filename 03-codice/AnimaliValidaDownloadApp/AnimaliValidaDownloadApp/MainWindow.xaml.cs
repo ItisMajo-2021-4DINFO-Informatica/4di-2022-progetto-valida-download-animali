@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Windows;
-using DidiSoft.Pgp;
+
 
 
 
@@ -14,12 +14,17 @@ namespace AnimaliValidaDownloadApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        ClasseDelloSha256 SHA256 = new();    
+        ClasseDelloSha256 SHA256 = new();
         public MainWindow()
         {
             InitializeComponent();
             TextBlock1.Visibility = Visibility.Collapsed;
             TextBlock2.Visibility = Visibility.Collapsed;
+            ConfrontaDueTextBlock.Visibility = Visibility.Hidden;
+            RedLabelSha.Visibility = Visibility.Hidden;
+            GreenLabelSha.Visibility = Visibility.Visible;
+            RedLabelVerifica.Visibility = Visibility.Hidden;
+            GreenLabelVerifica.Visibility = Visibility.Visible;
         }
 
 
@@ -27,35 +32,40 @@ namespace AnimaliValidaDownloadApp
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "(*.iso)|*.iso| All files(*.*)|*.*";
+
             if (openFileDialog.ShowDialog() == true)
-            { 
-                if (MessageBox.Show("Vuoi Importare Questo File?",
-                       "Save file",
-                       MessageBoxButton.YesNo,
-                       MessageBoxImage.Question) == MessageBoxResult.Yes)
-                       TextBlock1.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
-                {
-                    // l'utente fa qualcosa
-                }
-            }                                                                              //FINE CODICE FILESYSTEM
+            {
+
+                TextBlock1.Text = SHA256.SHA256CheckSum(openFileDialog.FileName);
+                RedLabelSha.Visibility = Visibility.Visible;
+                 GreenLabelSha.Visibility = Visibility.Hidden;
+            
+
+            }
+
+                                                                                           //FINE CODICE FILESYSTEm
         }
 
         private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)              //CODICE FILESYSTEM VERIFICA
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "(*.sha256)|*.sha256| All files(*.*)| *.*";
+
             if (openFileDialog.ShowDialog() == true)
-            { 
-                if (MessageBox.Show("Vuoi Importare Questo File?",
-                       "Save file",
-                       MessageBoxButton.YesNo,
-                       MessageBoxImage.Question) == MessageBoxResult.Yes)
-                       TextBlock2.Text = SHA256.LetturaInterna(openFileDialog.FileName);
-                {
-                    // l'utente compie un azione
-                }
+            {
+
+                TextBlock2.Text = SHA256.LetturaInterna(openFileDialog.FileName);
+                GreenLabelVerifica.Visibility = Visibility.Hidden;
+                RedLabelVerifica.Visibility = Visibility.Visible;
+
             }
-        }                                                                                  //FINE FILESYSTEM VERIFICA
+            {
+                // l'utente compie un azione
+            }
+
+        }
+
+                                                                                            //FINE FILESYSTEM VERIFICA
                                                                   
 
         private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)         //INIZIO CONFRONTA
@@ -87,16 +97,29 @@ namespace AnimaliValidaDownloadApp
             TextBlock1.Text = "";
             TextBlock2.Text = "";
             LabelCambio.Content = "Importa i Due File Richiesti";
+            GreenLabelSha.Visibility = Visibility.Visible;
+            GreenLabelVerifica.Visibility = Visibility.Visible;
+            RedLabelSha.Visibility = Visibility.Hidden;
+            RedLabelVerifica.Visibility = Visibility.Hidden;
         }                                                                                 //FINE ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
 
         private void EliminaSha1_Click(object sender, RoutedEventArgs e)                  //INIZIO ELIMINAZIONE CONTENUTO PRIMO SHA
         {
+            
+            GreenLabelSha.Visibility = Visibility.Visible;
             TextBlock1.Text = "";
+            RedLabelSha.Visibility = Visibility.Hidden;
+           
+
         }                                                                                 //FINE ELIMINAZIONE CONTENUTO PRIMO SHA
 
         private void EliminaSha2_Click(object sender, RoutedEventArgs e)                   //INIZIO ELIMINAZIONE CONTENUTO SECONDO SHA
         {
+            
+            GreenLabelVerifica.Visibility = Visibility.Visible;
             TextBlock2.Text = "";
+            RedLabelVerifica.Visibility = Visibility.Hidden;
+
         }                                                                                  //FINE ELIMINAZIONE CONTENUTO SECONDO SHA
 
         private void CloseProgram_Click(object sender, RoutedEventArgs e)                  //INIZIO BOTTONE CHE CHIUDE IL PROGRAMMA
@@ -111,58 +134,30 @@ namespace AnimaliValidaDownloadApp
 
         private void BottoneAvanti_Click(object sender, RoutedEventArgs e)                //INIZIO BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
         {
-            if (String.IsNullOrWhiteSpace(TextBlock1.Text ))
+            if (String.IsNullOrWhiteSpace(TextBlock1.Text))
             {
                 MessageBox.Show("File Scaricato non Importato");
                 return;
+              
             }
+         
             if (String.IsNullOrWhiteSpace(TextBlock2.Text))
             {
                 MessageBox.Show("File Di Verifica non Importato");
                 return;
+         
             }
             else
             {
                 LabelCambio.Content = "Confronta i Due File";
+                ConfrontaDueTextBlock.Visibility = Visibility.Visible;
+             
             }
 
         }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
-
-
- 
-        public class VerifyDemo
-    {
-        public void Demo()
-        {
-            // create an instance of the library
-            PGPLib pgp = new PGPLib();
-
-            // check the signature and extract the data 
-            SignatureCheckResult signatureCheck =
-                pgp.VerifyFile(@"C:\Test\INPUT.pgp",
-                               @"C:\Test\public_key.asc",
-                               @"C:\Test\OUTPUT.txt");
-
-            if (signatureCheck == SignatureCheckResult.SignatureVerified)
-            {
-                Console.WriteLine("Signare OK");
-            }
-            else if (signatureCheck == SignatureCheckResult.SignatureBroken)
-            {
-                Console.WriteLine("Signare of the message is either broken or forged");
-            }
-            else if (signatureCheck == SignatureCheckResult.PublicKeyNotMatching)
-            {
-                Console.WriteLine("The provided public key doesn't match the signature");
-            }
-            else if (signatureCheck == SignatureCheckResult.NoSignatureFound)
-            {
-                Console.WriteLine("This message is not digitally signed");
-            }
-        }
+       
     }
 } 
-}
 
 
 

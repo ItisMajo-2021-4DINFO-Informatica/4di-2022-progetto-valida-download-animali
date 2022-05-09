@@ -20,6 +20,8 @@
     <None Remove="DELETEALL.png" />
     <None Remove="ELIMINA.png" />
     <None Remove="Giallo.png" />
+    <None Remove="GreenLED.png" />
+    <None Remove="RedLED.png" />
     <None Remove="rossoX.png" />
     <None Remove="Verde-.png" />
   </ItemGroup>
@@ -44,6 +46,8 @@
     <Resource Include="DELETEALL.png" />
     <Resource Include="ELIMINA.png" />
     <Resource Include="Giallo.png" />
+    <Resource Include="GreenLED.png" />
+    <Resource Include="RedLED.png" />
     <Resource Include="rossoX.png" />
     <Resource Include="Verde-.png" />
   </ItemGroup>

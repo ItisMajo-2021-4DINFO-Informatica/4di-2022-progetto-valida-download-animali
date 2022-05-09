@@ -130,7 +130,25 @@
                 <ImageBrush ImageSource="/AVANTI.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-
-
+        <Label Content="" x:Name="RedLabelSha"   HorizontalAlignment="Left" Margin="90,107,0,0" VerticalAlignment="Top" Width="80" Height="55" FontSize="15" FontStyle="Normal" Foreground="Red">
+            <Label.Background>
+                <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,107,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
+            <Label.Background>
+                <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" x:Name="RedLabelVerifica"   HorizontalAlignment="Left" Margin="90,304,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
+            <Label.Background>
+                <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" x:Name="GreenLabelVerifica"   HorizontalAlignment="Left" Margin="90,306,0,0" VerticalAlignment="Top" Width="80" Height="55" FontSize="15" FontStyle="Normal" Foreground="Red">
+            <Label.Background>
+                <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
+            </Label.Background>
+        </Label>
     </Grid>
 </Window>
