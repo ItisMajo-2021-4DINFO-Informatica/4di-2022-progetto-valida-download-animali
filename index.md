@@ -1,7 +1,6 @@
-## Benvenuti sul sito web del gruppo Animali
+## Benvenuti su SecurityNow (Powered by Animali)
 
 In questo sito potranno essere approfondite le funzionalità del nostro programma.
-
 
 ## Introduzione
 
