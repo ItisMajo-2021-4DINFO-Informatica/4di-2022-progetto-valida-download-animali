@@ -3,33 +3,33 @@
 In questo sito potranno essere approfondite le funzionalità del nostro programma.
 
 
-### Introduzione
+## Introduzione
 
 Hai appena scaricato un File da Internet e hai paura che sia stato manomesso da qualche hacker? Non c'è problema, oggi ti illustreremo le funzionalità della nostra applicazione che ti permetterà di verificarne l'autenticità e rimanere al sicuro.
 
 
-### Cos'è necessario avere
+## Cos'è necessario avere
 
 Per sfruttare la nostra applicazione ti servirà un file scaricato con estensione **.iso** e un file (di solito fornito dal produttore del file che hai scaricato) con estensione **.sha256**, il quale permetterà di vericare se sopra di esso siano state eseguite delle manomissioni.
 
 
-### Illustrazione del funzionamento dell'applicazione
+## Illustrazione del funzionamento dell'applicazione
 
 Tramite delle immagini e le rispettive spiegazioni vi illustreremo le funzionalità del nostro programma.
 
-## Apertura del Programma
+### Apertura del Programma
 
 ![schermata iniziale](/immagini/Schermata_Iniziale.PNG)
 
 All'esecuzione del programma, si presenterà la schermata di caricamento che avverte l'utente della funzionalità del programma, ossia quella di verificare la sicurezza di un file scaricato da Internet.
 
-## Schermata Principale
+### Schermata Principale
 
 ![Dentro al Programma](/immagini/Dentro_Programma.PNG)
 
 Dopo la schermata di caricamento si presenterà davanti codesta interfaccia. Possiamo osservare delle istruzioni da seguire in rosso, seguendo queste istruzioni l'utente inserirà prima il file **.iso** e succesivamente il file **.sha256**.
 
-## Esecuzione del Confronto tra File
+### Esecuzione del Confronto tra File
 
 ![Confronta](/immagini/Confronta.PNG)
 
@@ -38,12 +38,12 @@ Dopo la schermata di caricamento si presenterà davanti codesta interfaccia. Pos
 
 
 
-### Collegamenti ai Documenti di Illustrazione del Progetto
+## Collegamenti ai Documenti di Illustrazione del Progetto
 Guarda i lavori che ci hanno portato alla realizzazione del nostro software.
 ### [-Documento di Definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/tree/main/01-definizione)
 ### [-Documento di Progetto](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/tree/main/02-progetto)
 
-### Approfondimento Chiave PGP
+## Approfondimento Chiave PGP
 
 Dato che il gruppo “Animali” non è riuscito ad implementare la funzionalità rigurdante la **Chiave PGP** all’interno del programma, esso farà una ricerca sulla chiave e su come si sarebbe dovuta implementare.
 Partiamo dalle basi, che cos’è la chiave PGP?
@@ -59,6 +59,6 @@ Ci sono vari metodi per implementarla a partire dall’utilizzo di **Programmi E
 
 
 
-### Contattaci
+## Contattaci
 
 Stai avendo problemi con il software? Guarda [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) e ti aiuteremo a risolverlo.
