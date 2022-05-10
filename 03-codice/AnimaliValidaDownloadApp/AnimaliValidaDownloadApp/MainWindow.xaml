@@ -73,6 +73,9 @@
             <ImageBrush ImageSource="/7.png"/>
         </Grid.Background>
 
+        <Border Grid.Row="0" Padding="10" Background="Transparent"
+                MouseDown="DragWithHeader" Grid.ColumnSpan="2" Margin="205,0,0,416"/>
+
         <Button  x:Name="OpenFile"  Content="" HorizontalAlignment="Left" Margin="18,107,0,0" VerticalAlignment="Top" Height="47" Width="48" Click="OpenFile_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/BOTTONE.png" Stretch="Uniform"/>
@@ -121,7 +124,8 @@
                 <ImageBrush ImageSource="/rossoX.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Left" Margin="315,70,0,0" VerticalAlignment="Top" Width="512" Height="75" FontFamily="Arial Black" FontSize="30" FontStyle="Normal" Background="{x:Null}" Foreground="Red" Grid.ColumnSpan="2"/>
+        <Label Content="Importa i Due File Richiesti" x:Name="LabelCambio"   HorizontalAlignment="Center" Margin="315,70,0,0" VerticalAlignment="Top" Width="512" Height="75" FontFamily="Arial Black" FontSize="30" FontStyle="Normal" Background="{x:Null}" Foreground="Red" Grid.ColumnSpan="2"/>
+        <Label Content="Confronta i Due File" x:Name="LabelIndicaConfronto"   HorizontalAlignment="Left" Margin="53,70,0,0" VerticalAlignment="Top" Width="512" Height="75" FontFamily="Arial Black" FontSize="30" FontStyle="Normal" Background="{x:Null}" Foreground="Red" Grid.Column="1"/>
         <Button Content="" x:Name="BottoneAvanti" HorizontalAlignment="Left" Margin="150,0,0,0" VerticalAlignment="Center" Click="BottoneAvanti_Click" Height="142" Width="150" BorderBrush="{x:Null}" Grid.Column="1">
             <Button.Foreground>
                 <ImageBrush ImageSource="/AVANTI.png"/>
@@ -135,7 +139,7 @@
                 <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
             </Label.Background>
         </Label>
-        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,109,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
+        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,108,0,0" VerticalAlignment="Top"  Width="80" Height="54"  FontSize="15" FontStyle="Normal" Foreground="Red">
             <Label.Background>
                 <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
             </Label.Background>
@@ -145,7 +149,7 @@
                 <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
             </Label.Background>
         </Label>
-        <Label Content="" x:Name="GreenLabelVerifica"   HorizontalAlignment="Left" Margin="90,306,0,0" VerticalAlignment="Top" Width="80" Height="55" FontSize="15" FontStyle="Normal" Foreground="Red">
+        <Label Content="" x:Name="GreenLabelVerifica"   HorizontalAlignment="Left" Margin="90,304,0,0" VerticalAlignment="Top" Width="80" Height="55" FontSize="15" FontStyle="Normal" Foreground="Red">
             <Label.Background>
                 <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
             </Label.Background>

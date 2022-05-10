@@ -25,6 +25,7 @@ namespace AnimaliValidaDownloadApp
             GreenLabelSha.Visibility = Visibility.Visible;
             RedLabelVerifica.Visibility = Visibility.Hidden;
             GreenLabelVerifica.Visibility = Visibility.Visible;
+            LabelIndicaConfronto.Visibility = Visibility.Hidden;
         }
 
 
@@ -65,8 +66,8 @@ namespace AnimaliValidaDownloadApp
 
         }
 
-                                                                                            //FINE FILESYSTEM VERIFICA
-                                                                  
+        //FINE FILESYSTEM VERIFICA
+
 
         private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)         //INIZIO CONFRONTA
         {
@@ -101,6 +102,8 @@ namespace AnimaliValidaDownloadApp
             GreenLabelVerifica.Visibility = Visibility.Visible;
             RedLabelSha.Visibility = Visibility.Hidden;
             RedLabelVerifica.Visibility = Visibility.Hidden;
+            LabelCambio.Visibility = Visibility.Visible;
+            LabelIndicaConfronto.Visibility = Visibility.Hidden;
         }                                                                                 //FINE ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
 
         private void EliminaSha1_Click(object sender, RoutedEventArgs e)                  //INIZIO ELIMINAZIONE CONTENUTO PRIMO SHA
@@ -149,13 +152,20 @@ namespace AnimaliValidaDownloadApp
             }
             else
             {
-                LabelCambio.Content = "Confronta i Due File";
+
+                LabelCambio.Visibility = Visibility.Hidden;
+                LabelIndicaConfronto.Visibility = Visibility.Visible;
                 ConfrontaDueTextBlock.Visibility = Visibility.Visible;
-             
+
             }
 
         }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
-       
+
+        private void DragWithHeader(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == System.Windows.Input.MouseButton.Left)
+                DragMove();
+        }
     }
 } 
 
