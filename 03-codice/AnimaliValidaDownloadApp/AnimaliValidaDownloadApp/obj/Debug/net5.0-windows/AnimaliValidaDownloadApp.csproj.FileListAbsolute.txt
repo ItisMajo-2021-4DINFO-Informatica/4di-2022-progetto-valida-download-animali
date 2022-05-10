@@ -64,3 +64,6 @@ C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-cod
 C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\ref\AnimaliValidaDownloadApp.dll
 C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.pdb
 C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.genruntimeconfig.cache
+C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.csproj.ResolveComReference.cache
+C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.Properties.Resources.resources
+C:\Users\caraz\OneDrive\Desktop\4di-2022-progetto-valida-download-animali\03-codice\AnimaliValidaDownloadApp\AnimaliValidaDownloadApp\obj\Debug\net5.0-windows\AnimaliValidaDownloadApp.csproj.GenerateResource.cache

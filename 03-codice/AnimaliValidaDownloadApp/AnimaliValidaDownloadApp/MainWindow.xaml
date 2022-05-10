@@ -6,8 +6,13 @@
         xmlns:local="clr-namespace:AnimaliValidaDownloadApp"
         mc:Ignorable="d"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="825" WindowStyle="None">
+
+
+
     <Window.Resources>
+
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>
@@ -65,6 +70,7 @@
         </Style>
     </Window.Resources>
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="166*"/>
             <ColumnDefinition Width="269*"/>
@@ -92,7 +98,7 @@
             </Button.Background>
 
         </Button>
-        <Button  x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="21,304,0,0" VerticalAlignment="Top" Height="47" Width="48" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}">
+        <Button  x:Name="OpenFileVerifica"  Content="" HorizontalAlignment="Left" Margin="19,329,0,0" VerticalAlignment="Top" Height="47" Width="48" Click="OpenFileVerifica_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/BOTTONE.png" Stretch="Uniform"/>
             </Button.Background>
@@ -109,7 +115,7 @@
             </Button.Background>
 
         </Button>
-        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="21,371,246,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
+        <Button Style="{DynamicResource BottoneRotondo}" x:Name="EliminaSha2"  Margin="19,396,248,0" VerticalAlignment="Top" Height="44" BorderBrush="{x:Null}" Click="EliminaSha2_Click" RenderTransformOrigin="0.503,-0.102">
             <Button.Background>
                 <ImageBrush ImageSource="/ELIMINA.png" Stretch="Uniform"/>
             </Button.Background>
@@ -139,20 +145,23 @@
                 <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
             </Label.Background>
         </Label>
-        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,108,0,0" VerticalAlignment="Top"  Width="80" Height="54"  FontSize="15" FontStyle="Normal" Foreground="Red">
+        <Label Content="" x:Name="GreenLabelSha"   HorizontalAlignment="Left" Margin="90,107,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
             <Label.Background>
                 <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
             </Label.Background>
         </Label>
-        <Label Content="" x:Name="RedLabelVerifica"   HorizontalAlignment="Left" Margin="90,304,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
+        <Label Content="" x:Name="RedLabelVerifica"   HorizontalAlignment="Left" Margin="90,325,0,0" VerticalAlignment="Top"  Width="80" Height="55"  FontSize="15" FontStyle="Normal" Foreground="Red">
             <Label.Background>
                 <ImageBrush ImageSource="/GreenLED.png" Stretch="Uniform"/>
             </Label.Background>
         </Label>
-        <Label Content="" x:Name="GreenLabelVerifica"   HorizontalAlignment="Left" Margin="90,304,0,0" VerticalAlignment="Top" Width="80" Height="55" FontSize="15" FontStyle="Normal" Foreground="Red">
+        <Label Content="" x:Name="GreenLabelVerifica"   HorizontalAlignment="Left" Margin="90,325,0,0" VerticalAlignment="Top" Width="80" Height="55" FontSize="15" FontStyle="Normal" Foreground="Red">
             <Label.Background>
                 <ImageBrush ImageSource="/RedLED.png" Stretch="Uniform"/>
             </Label.Background>
+
         </Label>
     </Grid>
 </Window>
+
+

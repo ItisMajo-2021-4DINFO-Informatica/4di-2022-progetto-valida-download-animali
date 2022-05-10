@@ -45,3 +45,9 @@ namespace AnimaliValidaDownloadApp
       
     }
 }
+//TERMINE FUNZIONE DI CALCOLO E LETTURA INTERNA DELLO SHA 256
+
+
+
+
+//COPYRIGHT (R) ANIMALI 2022

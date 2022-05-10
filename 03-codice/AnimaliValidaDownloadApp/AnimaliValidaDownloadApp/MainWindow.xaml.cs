@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Windows;
+using System.Threading;
 
 
 
@@ -18,6 +19,8 @@ namespace AnimaliValidaDownloadApp
         public MainWindow()
         {
             InitializeComponent();
+            
+
             TextBlock1.Visibility = Visibility.Collapsed;
             TextBlock2.Visibility = Visibility.Collapsed;
             ConfrontaDueTextBlock.Visibility = Visibility.Hidden;
@@ -29,10 +32,10 @@ namespace AnimaliValidaDownloadApp
         }
 
 
-        private void OpenFile_Click(object sender, RoutedEventArgs e)                      //CODICE FILESYSTEM
+        private void OpenFile_Click(object sender, RoutedEventArgs e)                      //CODICE OPENFILEDIALOG (NAVIGAZIONE NEL FILESYSTEM PER RICERCA FILE)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "(*.iso)|*.iso| All files(*.*)|*.*";
+            openFileDialog.Filter = "(*.iso)|*.iso| All files(*.*)|*.*";                  //FILTRI PER LA RICERCA NEL FYLESYSTEM
 
             if (openFileDialog.ShowDialog() == true)
             {
@@ -44,13 +47,13 @@ namespace AnimaliValidaDownloadApp
 
             }
 
-                                                                                           //FINE CODICE FILESYSTEm
+                                                                                           //FINE CODICE OPENFILEDIALOG
         }
 
-        private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)              //CODICE FILESYSTEM VERIFICA
+        private void OpenFileVerifica_Click(object sender, RoutedEventArgs e)             //CODICE OPENFILEDIALOG (NAVIGAZIONE NEL FILESYSTEM PER RICERCA FILE)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "(*.sha256)|*.sha256| All files(*.*)| *.*";
+            openFileDialog.Filter = "(*.sha256)|*.sha256| All files(*.*)| *.*";           //FILTRI PER LA RICERCA NEL FYLESYSTEM
 
             if (openFileDialog.ShowDialog() == true)
             {
@@ -66,10 +69,10 @@ namespace AnimaliValidaDownloadApp
 
         }
 
-        //FINE FILESYSTEM VERIFICA
+                                                                                           //FINE CODICE OPENFILEDIALOG (FILE DI VERIFICA)
 
 
-        private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)         //INIZIO CONFRONTA
+        private void ConfrontaDueTextBlock_Click(object sender, RoutedEventArgs e)         //INIZIO CONFRONTO TRA I DUE FILE
         {
             if (String.IsNullOrWhiteSpace(TextBlock1.Text))
             {
@@ -83,17 +86,17 @@ namespace AnimaliValidaDownloadApp
             }
             if (TextBlock1.Text.Trim() == TextBlock2.Text.Trim())
             {
-                MessageBox.Show("Lo SHA256 è uguale");
+                MessageBox.Show("Il File Scaricato è sicuro, non ha subito manomissioni");
                 return;
             }
             else
             {
-                MessageBox.Show("Lo SHA256 non è uguale");
+                MessageBox.Show("ATTENZIONE!! Il File Scaricato potrebbe aver subito manomissioni");
                 return;
             }
-        }                                                                                 //FINE CONFORNTA
+        }                                                                                 //FINE CONFRONTO TRA I DUE FILE
 
-        private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)    //INIZIO ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
+        private void EliminaContenutoTextBlock_Click(object sender, RoutedEventArgs e)    //CODICE DEL BOTTONE CHE ELIMINA TUTTI I FILE IMPORTATI
         {
             TextBlock1.Text = "";
             TextBlock2.Text = "";
@@ -104,38 +107,38 @@ namespace AnimaliValidaDownloadApp
             RedLabelVerifica.Visibility = Visibility.Hidden;
             LabelCambio.Visibility = Visibility.Visible;
             LabelIndicaConfronto.Visibility = Visibility.Hidden;
-        }                                                                                 //FINE ELIMINAZIONE CONTENUTI ALL'INTERNO DELLE TEXTBLOCK
+        }                                                                                 //FINE CODICE DEL BOTTONE CHE ELIMINA TUTTI I FILE IMPORTATI
 
-        private void EliminaSha1_Click(object sender, RoutedEventArgs e)                  //INIZIO ELIMINAZIONE CONTENUTO PRIMO SHA
+        private void EliminaSha1_Click(object sender, RoutedEventArgs e)                  //CODICE DEL BOTTONE CHE ELIMINA IL FILE SCARICATO IMPORTATO
         {
             
             GreenLabelSha.Visibility = Visibility.Visible;
             TextBlock1.Text = "";
             RedLabelSha.Visibility = Visibility.Hidden;
-           
 
-        }                                                                                 //FINE ELIMINAZIONE CONTENUTO PRIMO SHA
 
-        private void EliminaSha2_Click(object sender, RoutedEventArgs e)                   //INIZIO ELIMINAZIONE CONTENUTO SECONDO SHA
+        }                                                                                 //FINE CODICE DEL BOTTONE CHE ELIMINA IL FILE SCARICATO IMPORTATO
+
+        private void EliminaSha2_Click(object sender, RoutedEventArgs e)                  //CODICE DEL BOTTONE CHE ELIMINA IL FILE DI VERIFICA IMPORTATO
         {
             
             GreenLabelVerifica.Visibility = Visibility.Visible;
             TextBlock2.Text = "";
             RedLabelVerifica.Visibility = Visibility.Hidden;
 
-        }                                                                                  //FINE ELIMINAZIONE CONTENUTO SECONDO SHA
+        }                                                                                  //FINE CODICE DEL BOTTONE CHE ELIMINA IL FILE DI VERIFICA IMPORTATO
 
         private void CloseProgram_Click(object sender, RoutedEventArgs e)                  //INIZIO BOTTONE CHE CHIUDE IL PROGRAMMA
         {
             Close();
         }                                                                                  //FINE BOTTONE CHE CHIUDE IL PROGRAMMA
 
-        private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)         //INIZIO BOTTONE CHE CHIUDE IL PROGRAMMA
+        private void MettiTendinaProgramma_Click(object sender, RoutedEventArgs e)         //INIZIO BOTTONE CHE METTE A TENDINA IL PROGRAMMA
         {
             this.WindowState = WindowState.Minimized;
-        }                                                                                  //FINE BOTTONE CHE CHIUDE IL PROGRAMMA
+        }                                                                                  //FINE BOTTONE CHE METTE A TENDINA  IL PROGRAMMA
 
-        private void BottoneAvanti_Click(object sender, RoutedEventArgs e)                //INIZIO BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
+        private void BottoneAvanti_Click(object sender, RoutedEventArgs e)                //INIZIO BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI PER L'UTENTE
         {
             if (String.IsNullOrWhiteSpace(TextBlock1.Text))
             {
@@ -159,15 +162,20 @@ namespace AnimaliValidaDownloadApp
 
             }
 
-        }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI
+        }                                                                                //FINE BOTTONE CHE FA ANDARE AVANTI LE  ISTRUZIONI PER L'UTENTE
 
-        private void DragWithHeader(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void DragWithHeader(object sender, System.Windows.Input.MouseButtonEventArgs e)  //INIZIO CODICE DEL DRAG WINDOW
         {
             if (e.ChangedButton == System.Windows.Input.MouseButton.Left)
                 DragMove();
-        }
+        }                                                                                         //FINE CODICE DEL DRAG WINDOW
     }
 } 
+//TERMINE DEL PROGRAMMA
 
+
+
+
+//COPYRIGHT (R) ANIMALI 2022
 
 
