@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "AnimaliValidaDownloadApp/1.0.0": {
+        "runtime": {
+          "AnimaliValidaDownloadApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AnimaliValidaDownloadApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

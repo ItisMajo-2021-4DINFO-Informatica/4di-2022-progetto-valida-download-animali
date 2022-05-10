@@ -1,9 +1,28 @@
-# Progetto
+# Documento di Progetto
+Membri del Gruppo:
 
-Il progetto dell'elaborato dovrà affrontare i seguenti punti:
-- stesura del progetto iniziale, racconto di come si andrà a realizzare la soluzione
-- organizzazione del lavoro, suddivisione della realizzazione in fasi, stima della durata e ruoli dei membri del gruppo
-- ducumantazione del processo di realizzazione, attraverso appunti e commenti significativi alle versioni rilasciate su GitHub (commit)
-- documentazione dei collegamenti e relazioni tra ciò che si sta realizzando e le informazioni di riferimento (teoria della materia, altre materie, soluzioni già esistenti)
 
-Puoi editare questo file per creare il tuo documento di progetto oppure aggiungere un altro file in questa cartella. In ogni caso il documento deve essere un file di testo formattato con il linguaggio Markdown.
+[@jacopofavat](https://github.com/JacopoFavat) - [@marcocarazita](https://github.com/marcocarazita)
+
+## Stesura del progetto iniziale, racconto di come si andrà a realizzare la soluzione
+Inizialmente andremo a creare un nuovo progetto **WPF** in linguaggio _C#,_ all'interno del programma **Visual Studio 2019** precedentemente citato nel [Documento di Definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/blob/main/01-definizione/README.md). Di partenza l'utente dovrà importare il file da analizzare tramite il [Filesystem](https://www.codeproject.com/Articles/1236588/File-System-Controls-in-WPF-Version-III) e per far si che questa azione avvenga andremo ad utilizzare la classe "[Openfiledialog](https://docs.microsoft.com/it-it/dotnet/desktop/wpf/windows/how-to-open-common-system-dialog-box?view=netdesktop-6.0)" la quale verrà integrata all'interno di un bottone facilmente visualizzabile dall'utente. Ovviamente in caso di importo errato di un file, l'utente sarà avvisato tramite un **Allert** e sarà invitato a reimportarne un'altro, la procedura si ripeterà se il file sarà di nuovo reinserito errato. Succesivamente dovrà essere confrontato lo **SHA256** del file importato con quello originale e vi sarà anche un confornto tra la **Firma** e la **Chiave PGP**. Infine l'esito di verifica verrà stampato all'interno di una **Label**, dove al suo interno saranno visualizzate tutte le informazioni legate al rapporto eseguito.  
+
+## Organizzazione del lavoro, suddivisione della realizzazione in fasi, stima della durata e ruoli dei membri del gruppo
+Il lavoro sarà organizzato nel seguente modo:
+ - [@marcocarazita](https://github.com/marcocarazita) lavorerà prima sulla parte grafica e successivamente alla modalità di calcolo del metodo del **Checksum**, utilizzando le risorse citate precedentemente nel [Documento di Definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/blob/main/01-definizione/README.md). Si stima _una settimana_ di lavoro per portare a termine la creazione dell'interfaccia grafica del progetto **WPF**.
+ - [@jacopofavat](https://github.com/JacopoFavat) inizialmente scriverà il codice dietro al filesystem e in seguito realizzerà la parte relativa all'**Openfiledialog**. Inoltre con l'aiuto del compagno di **[Gruppo](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali)** andrà a realizzare la **Verifica della Firma Digitale**. Il tempo stimato per la realizazzione del lavoro è di circa _10 giorni_.
+ - Infine tutto il gruppo andrà ad eseguire un controllo dettagliato del prodotto finale tramite il **Debug** del **Codice** e una minuziosa verifica del prodotto finale durante l'esecuzione, per far si che non siano presenti _errori_ e/o _malfunzionamenti_ interni fino a quel momento non visti. 
+
+
+## Documentazione del processo di realizzazione, attraverso appunti e commenti significativi alle versioni rilasciate su GitHub (commit)
+Come citato in precedenza nel [Documento di Definizione](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/blob/main/01-definizione/README.md), utilizzeremo il sito web open source **[GitHub](https://github.com/)** e la sua realitiva applicazione **GitHub Desktop**, la quale verrà utilizzata per _uploadare_ tutte le versione aggiornate e comprese di modifiche del nostro progetto tramite i [Commit](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/commits/main). Essi presentano nell'**Intestazione** il nome della sezione del progetto principale a cui il **[Gruppo](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali)** sta lavorando, inoltre associato al nome vi è presente la versione del file che ad ogni _upload_ sarà aggiornata con **Numeri Crescenti**. All'interno del singolo [Commit](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/commits/main) sarà disponibile la descrizione delle modifiche apportate che sarà visualizzabile con l'utilizzo dell'icona dei **Tre Puntini** al fianco di ogni [Commit](https://github.com/ItisMajo-2021-4DINFO-Informatica/4di-2022-progetto-valida-download-animali/commits/main).
+
+## Documentazione dei collegamenti e relazioni tra ciò che si sta realizzando e le informazioni di riferimento (teoria della materia, altre materie, soluzioni già esistenti)
+Di seguito sono riportati i collegamenti con gli argomenti delle materie che stiamo studiando:
+
+- **_Inglese_**: Per reperire informazioni più precise nelle dispense online e per facilitare la ricerca all'interno del **Filesystem** in inglese.
+- **_Informatica (Teoria)_**: Usufruiremo delle spiegazioni del Professore [Marcello Bozzi](https://github.com/bozzimarcello), in merito alla chiave PGP, alla chiave asimmetrica e al calcolo del checksum **SHA256**.
+
+Per la parte rigurdante il calcolo del checksum **SHA256** di un file uploadato dal **Filesystem** ci andremo ad ispirare al [sito web](https://emn178.github.io/online-tools/sha256_checksum.html) in questione, il quale sarà il nostro punto di partenza.
+
+Per la sezione riguardante la **Chiave PGP**, come per il calcolo del checksum, ci andremo ad ispirare al seguente [programma](https://www.igolder.com/pgp/generate-key/) (web open source) in modo tale da avere un solido riferimento a cui ispirarci. 

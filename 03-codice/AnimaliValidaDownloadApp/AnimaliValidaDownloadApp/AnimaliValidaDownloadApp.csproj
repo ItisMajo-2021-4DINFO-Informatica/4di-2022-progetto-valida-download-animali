@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+	  <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1.jpg" />
+    <None Remove="2.jpg" />
+    <None Remove="4.png" />
+    <None Remove="5.png" />
+    <None Remove="6.png" />
+    <None Remove="7.png" />
+    <None Remove="aaaaa.png" />
+    <None Remove="AVANTI.png" />
+    <None Remove="BOTTONE.png" />
+    <None Remove="CONFRONTA.png" />
+    <None Remove="DELETEALL.png" />
+    <None Remove="ELIMINA.png" />
+    <None Remove="Giallo.png" />
+    <None Remove="GreenLED.png" />
+    <None Remove="RedLED.png" />
+    <None Remove="rossoX.png" />
+    <None Remove="splash.jpg" />
+    <None Remove="Verde-.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Starksoft.Cryptography.OpenPGP">
+      <HintPath>..\..\ThirdPartyAssemblies\Starksoft.Cryptography.OpenPGP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1.jpg" />
+    <Resource Include="2.jpg" />
+    <Resource Include="4.png" />
+    <Resource Include="5.png" />
+    <Resource Include="6.png" />
+    <Resource Include="7.png" />
+    <Resource Include="aaaaa.png" />
+    <Resource Include="AVANTI.png" />
+    <Resource Include="BOTTONE.png" />
+    <Resource Include="CONFRONTA.png" />
+    <Resource Include="DELETEALL.png" />
+    <Resource Include="ELIMINA.png" />
+    <Resource Include="Giallo.png" />
+    <Resource Include="GreenLED.png" />
+    <Resource Include="RedLED.png" />
+    <Resource Include="rossoX.png" />
+    <Resource Include="splash.jpg" />
+    <Resource Include="Verde-.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
