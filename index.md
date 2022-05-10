@@ -10,7 +10,7 @@ Hai appena scaricato un File da Internet e hai paura che sia stato manomesso da 
 
 ### Cos'è necessario avere
 
-Per sfruttare la nostra applicazione ti servirà il file scaricato con estensione **.iso** e un file (di solito fornito dal produttore del file che hai scaricato) con estensione **.sha256**, il quale permetterà di vericare se sopra di esso siano state eseguite delle manomissioni.
+Per sfruttare la nostra applicazione ti servirà un file scaricato con estensione **.iso** e un file (di solito fornito dal produttore del file che hai scaricato) con estensione **.sha256**, il quale permetterà di vericare se sopra di esso siano state eseguite delle manomissioni.
 
 
 ### Illustrazione del funzionamento dell'applicazione
