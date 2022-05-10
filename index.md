@@ -17,6 +17,12 @@ Per sfruttare la nostra applicazione ti servirà il file scricato con estensione
 ![schermata iniziale](/immagini/Schermata_Iniziale.PNG)
 All'esecuzione del programma, si presenterà la schermata di caricamento che avverte l'utente della funzionalità del programma, ossia quella di verificare la sicurezza di un file scaricato da Internet.
 
+![Dentro al Programma](/immagini/Dentro_Programma.PNG)
+Dopo la schermata di carimento si presenterà davanti codesta interfaccia. Possiamo osservare delle istruzioni da seguire in rosso, seguendo queste istruzioni l'utente inserirà prima il file .iso e succesivamente il file .sha256.
+
+![Confronta](/immagini/Confronta.PNG)
+ Dopo aver imporato i due file le istruzioni cambieranno, e comparirà la scritta che riporta il seguente testo "confronta i due file" quindi apparirà anche un bottone fino a quel momento invisibile. Inoltre cambieranno anche le due x rosse posizionate vicino ai due file da imporatre le quali diventerrano spunte verdi. Premendo infine su quel bottone "confronta", si verificherà che i due file non siano stati compromessi.
+
 
 
 
