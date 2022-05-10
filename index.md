@@ -14,7 +14,8 @@ Per sfruttare la nostra applicazione ti servirà il file scricato con estensione
 
 
 ### Illustrazione del funzionamento dell'applicazione
-
+![schermata iniziale](/immagini/Schermata_Iniziale.PNG)
+All'esecuzione del programma, si presenterà la schermata di caricamento che avverte l'utente della funzionalità del programma, ossia quella di verificare la sicurezza di un file scaricato da Internet.
 
 
 
