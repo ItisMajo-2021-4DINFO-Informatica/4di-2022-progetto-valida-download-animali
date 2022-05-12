@@ -57,7 +57,7 @@ Ci sono vari metodi per implementare la chiave PGP a partire dall’utilizzo di 
 - **GnuGP** la quale è un'implementazione completa dello standard OpenPGP, esso consente di crittografare e firmare i tuoi dati e comunicazioni. E' uno strumento a riga di comando con funzionalità per una facile integrazione con altre applicazioni.
 - **Gpg4win** il quale è un pacchetto di installazione per Windows con strumenti software e manuali per e-mail e file criptati.
 - **CMD**, con i suoi vari comandi fondamentali per sfruttare la chiave PGP.
-![gpg](/immagini/GPG.png)
+![gpg](/immagini/GPGLogo.png)
 
 
 
